@@ -1,0 +1,55 @@
+############ TIPS #####################
+
+[]: Acrylic Cement mess: Use insulin syringes
+For better cement application use a small insulin syringe.
+The recommended bottle dispensers are hard to master. I made some awful messes until I started using a 1cc /19gauge insulin syringe. It allows much better control.
+These are available in USA at any pharmacy or amazon.
+I would also suggest that OpenROV start shipping some of the acrylic scraps so that a person can practice a few bonds before starting on the actual ROV. That would have saved me a lotta mess.
+
+
+[]: There is no 30.0.3 Tag. There is only a branch.
+
+[]: Image Permissions
+
+[]: Run MOCK cockpit windows
+set USE_MOCK=true
+set video_port = 8092
+set photoDirectory="D:\temp\nodemock"
+set video_url="http://localhost:8092/?action=stream"
+D:
+CD "D:\AAAProjects\AAAopenROV\Image\Image30.0.3Dev\opt\openrov\cockpit\src\"
+node cockpit.js
+
+[]: Fix existsSync() not exist in PluginLoader.js
+// See 
+// https://stackoverflow.com/questions/22005002/node-js-typeerror-object-object-has-no-method-existssync#22039563
+// https://github.com/nodejs/node-v0.x-archive/issues/3005
+fs.exists = fs.exists || require('path').exists;
+fs.existsSync = fs.existsSync || require('path').existsSync;
+
+//Line32 if (path.existsSync(path.join(dir, plugin))) {
+if (fs.existsSync(path.join(dir, plugin))) {
+
+
+[] app.configure() removed from Express 4.0...
+  Fixit!
+ 
+[]  
+set NODE_ENV=production
+set npm_config_shrinkwrap=true
+npm install
+
+// https://stackoverflow.com/questions/27688804/how-do-i-debug-error-spawn-enoent-on-node-js
+// Fix to make spawn() to report args so you can see what went wrong 
+(function() {
+    var childProcess = require("child_process");
+    var oldSpawn = childProcess.spawn;
+    function mySpawn() {
+        console.log('spawn called');
+        console.log(arguments);
+        var result = oldSpawn.apply(this, arguments);
+        return result;
+    }
+    childProcess.spawn = mySpawn;
+})();
+

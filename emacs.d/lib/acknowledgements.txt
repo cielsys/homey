@@ -1,0 +1,3 @@
+ethan-whitespace.el
+  Thanks to Ethan Glasser-Camp for his whitespace OCD and cheery rant at
+  https://github.com/glasserc/ethan-wspace

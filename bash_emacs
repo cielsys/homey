@@ -1,0 +1,14 @@
+#!/bin/bash
+
+# Start emacs server so all files open in same process
+alias emacs-start="emacs --daemon; emacs -c"
+alias emacs-shutdown="emacsclient -e '(kill-emacs)'"
+
+gg() { emacsclient --alternate-editor="" --no-wait "$@" > /dev/null 2>&1 ; }
+
+export -f gg
+
+export ALTERNATE_EDITOR=""
+#export EDITOR="emacsclient -t"                  # $EDITOR should open in terminal
+export VISUAL="emacsclient -n -a ''"         # $VISUAL opens in GUI with non-daemon as alternate
+export EDITOR="emacsclient -n -a ''"

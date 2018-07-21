@@ -1,0 +1,36 @@
+X Create Todo.txt
+
+export LD_LIBRARY_PATH=/usr/local/lib:~/.c9 something
+
+Git
+  Streamline git openROV repos hierarchies
+  Normalize git user name email
+
+Clone uSD0 -> uSD1
+
+LeakDetector
+  Circuit 
+  Firmware
+  Node linkage
+  
+Reinstall node on VirtualBox mint18?
+
+Rewrite openROV buildimage.txt for new node versions
+  No install inspector 
+  Working shell scrip mockrov.bash
+  Fix warnings from "npm install" step
+  
+Create rosJoy index.html for launching the ROS and node services
+
+Emacs
+  Find old .emacsrc etc files - graft into mint/rov
+  X Change backup file location
+  
+Bash
+  Find old .bashrc file
+  X Add ~/bin to path
+  X alias ll
+  
+OpenROV forum
+  Question about fs ownership and permissions.
+  
