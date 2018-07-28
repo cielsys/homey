@@ -4,25 +4,31 @@
 # git clone --origin cielgithub https://github.com/cielsys/homey homey
 # 2) Run this script (need chmod u+x)
 
+#homeyDir="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+# TODO: figure out relative to home path
 
-#dotFiles=".bashrc .bash_aliases .bash_emacs .emacs.d bin "
-dotFiles=".test"
+# Presumes dotfile links are to be created in and relative to ~ homeDir
+cd ~
+# And the actual files are in ~/homey
+homeyDir=homey # Want to create relative path to home
+echo "homeyDir="$homeyDir
 
-dotSrcDir=~/homey
-bakDir=$dotSrcDir/backup/
+# Define files that should be exposed as links in ~
+dotFiles=".bashrc .bash_aliases .bash_emacs .emacs.d bin "
 
+timeNow=`date '+%Y_%m_%dT%H_%M_%S'`;
+bakDir=$homeyDir/backup/backup.$timeNow
 if [ ! -e $bakDir ]; then
-    mkdir $bakDir
+    mkdir -p $bakDir
 fi
-cd $dotSrcDir
 
 for file in $dotFiles; do
 	# If it's a file (not a link)
-	if [ -f ~/$file ]; then
-		mv ~/$file  $bakDir
+	if [ -e $file ]; then
+		mv $file  $bakDir
 	fi
 
-    echo "SymLinking  $dotSrcDir/$file ~/$file"
-    ln -s $dotSrcDir/$file ~/$file
+    echo "SymLinking  $homeyDir/$file $file"
+    ln -s $homeyDir/$file $file
 done
-echo "Old files moved to $dotSrcDir/backup"
+echo "Old files moved to $bakDir"
