@@ -27,3 +27,5 @@ alias cdp='pushd ~/catkin_ws'
 alias cds='pushd ~/catkin_ws/src/simple_arm/scripts'
 
 alias mmm="source ~/bin/ros_make.bash"
+alias psg="ps -aux | grep -i "
+alias sds="source ~/catkin_ws/devel/setup.bash"

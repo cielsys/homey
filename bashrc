@@ -152,7 +152,7 @@ elif [ "$input_choice" = "n" ]
 then
   echo "ROS *NOT* sourced!"
   # Setup conda
-  export PATH="/home/robond/miniconda3/bin:$PATH"
+  export PATH="/home/cl/apps/anaconda3/bin:$PATH"
   break
 else
   echo "Warning: Not an acceptable option. Choose (y/n).
@@ -160,3 +160,5 @@ else
 fi
 
 done
+
+# added by Anaconda3 installer

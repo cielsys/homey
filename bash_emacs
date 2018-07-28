@@ -1,8 +1,8 @@
 #!/bin/bash
 
 # Start emacs server so all files open in same process
-alias emacs-start="emacs --daemon; emacs -c"
-alias emacs-shutdown="emacsclient -e '(kill-emacs)'"
+alias emacs-start="emacs --daemon; sleep 5, emacsclient -n -c"
+alias emacs-stop="emacsclient -e '(kill-emacs)'"
 
 gg() { emacsclient --alternate-editor="" --no-wait "$@" > /dev/null 2>&1 ; }
 
