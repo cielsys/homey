@@ -5,7 +5,9 @@
 # 2) Run this script (need chmod u+x)
 
 
-dotFiles="bashrc bash_aliases bash_emacs"
+#dotFiles=".bashrc .bash_aliases .bash_emacs .emacs.d bin "
+dotFiles=".test"
+
 dotSrcDir=~/homey
 bakDir=$dotSrcDir/backup/
 
@@ -16,10 +18,11 @@ cd $dotSrcDir
 
 for file in $dotFiles; do
 	# If it's a file (not a link)
-	if [ -f ~/.$file ]; then
-		mv ~/.$file  $bakDir
+	if [ -f ~/$file ]; then
+		mv ~/$file  $bakDir
 	fi
-    echo "SymLinking  $dotSrcDir/$file ~/.$file"
-    ln -s $dotSrcDir/$file ~/.$file
+
+    echo "SymLinking  $dotSrcDir/$file ~/$file"
+    ln -s $dotSrcDir/$file ~/$file
 done
 echo "Old files moved to $dotSrcDir/backup"
