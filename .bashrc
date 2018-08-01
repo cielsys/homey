@@ -145,7 +145,8 @@ then
   ########################################################################################
   # Add other ROS statements here or uncomment the relevant ones below
   # export GAZEBO_MODEL_PATH=~/catkin_ws/src/sensor_stick/models
-  # export GAZEBO_MODEL_PATH=~/catkin_ws/src/RoboND-Kinematics-Project/kuka_arm/models
+  export GAZEBO_MODEL_PATH=~/catkin_ws/src/RoboND-Kinematics-Project/kuka_arm/models
+  export ROS_IP=192.168.1.153
   ########################################################################################
   break
 elif [ "$input_choice" = "n" ]
@@ -160,5 +161,3 @@ else
 fi
 
 done
-
-# added by Anaconda3 installer
