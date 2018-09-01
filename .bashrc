@@ -120,10 +120,6 @@ export ROS_OS_OVERRIDE=ubuntu:16.04:xenial
 # added by Miniconda3 installer Comment out while using ros
 #export PATH="/home/cl/apps/miniconda/bin:$PATH"
 
-if [ -f /opt/ros/kinetic/setup.bash ]; then
-     source /opt/ros/kinetic/setup.bash
-fi 
-
 while true
 do
 
@@ -141,12 +137,12 @@ then
   export ROS_IP=`echo $(hostname -I)` 
   ########################################################################################
   # If you want to source your setup bash in your catkin workspace, uncomment the line below
-  source ~/catkin_ws/devel/setup.bash
+  #source ~/catkin_ws/devel/setup.bash
   ########################################################################################
   # Add other ROS statements here or uncomment the relevant ones below
   # export GAZEBO_MODEL_PATH=~/catkin_ws/src/sensor_stick/models
   export GAZEBO_MODEL_PATH=~/catkin_ws/src/RoboND-Kinematics-Project/kuka_arm/models
-  export ROS_IP=192.168.1.153
+  export ROS_IP=localhost
   ########################################################################################
   break
 elif [ "$input_choice" = "n" ]
@@ -156,8 +152,7 @@ then
   export PATH="/home/cl/apps/anaconda3/bin:$PATH"
   break
 else
-  echo "Warning: Not an acceptable option. Choose (y/n).
-          "
+  echo "Warning: Not an acceptable option. Choose (y/n). "
 fi
 
 done

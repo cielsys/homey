@@ -25,6 +25,7 @@ alias hhg="history | grep -i "
 alias kk='kill -9 '
 alias cdp='pushd ~/catkin_ws'
 alias cds='pushd ~/catkin_ws/src/RoboND-Kinematics-Project/kuka_arm/scripts'
+alias ros_kill="killall gazebo & killall gzserver & killall gzclient"
 
 alias mmm="source ~/bin/ros_make.bash"
 alias psg="ps -aux | grep -i "
