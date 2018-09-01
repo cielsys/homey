@@ -1,5 +1,5 @@
 # Homey
-## Homey - my bash/user home environment.
+## Homey - my bash $HOME environment. .bashrc++ emacs ~/bin
 New projects find me creating lots of new linux systems,
 real, VM, cloud, embedded-ish... WSLUbuntu!
 Homey is an attempt to enable quick duplication of my
