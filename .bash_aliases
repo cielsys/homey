@@ -23,10 +23,19 @@ alias waf="./modules/waf/waf-light"
 alias hhh="history "
 alias hhg="history | grep -i "
 alias kk='kill -9 '
-alias cdp='pushd ~/catkin_ws'
-alias cds='pushd ~/catkin_ws/src/RoboND-Kinematics-Project/kuka_arm/scripts'
-alias ros_kill="killall gazebo & killall gzserver & killall gzclient"
 
 alias mmm="source ~/bin/ros_make.bash"
 alias psg="ps -aux | grep -i "
 alias sds="source ~/catkin_ws/devel/setup.bash"
+alias envg="env | grep -i "
+
+alias ros_kill="killall gazebo & killall gzserver & killall gzclient"
+
+function cdz(){
+    if [ -L "z$1" ]; then
+       echo "z$1 Does not exist "
+       rm $newlink
+    fi
+
+    pushdir ~z$1
+}
