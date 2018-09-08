@@ -1,5 +1,6 @@
 # -*- mode: gitignore; -*-
 
+**[Jj]unk/
 /url/cache
 /.emacs.desktop
 /auto-save-list

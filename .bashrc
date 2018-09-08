@@ -128,26 +128,37 @@ read -p "Do you want to source ROS in this workspace (y/n): " input_choice
 
 if [ "$input_choice" = "y" ]
 then
-  echo "ROS sourced!"
+  echo "Sourcing ROS..."
   # Source ROS
   source /opt/ros/kinetic/setup.bash
-  # Change ROS editor to nano
-  # export EDITOR='nano -w'
-  # Set up ROS ip
-  export ROS_IP=`echo $(hostname -I)` 
-  ########################################################################################
-  # If you want to source your setup bash in your catkin workspace, uncomment the line below
-  #source ~/catkin_ws/devel/setup.bash
-  ########################################################################################
-  # Add other ROS statements here or uncomment the relevant ones below
-  # export GAZEBO_MODEL_PATH=~/catkin_ws/src/sensor_stick/models
-  export GAZEBO_MODEL_PATH=~/catkin_ws/src/RoboND-Kinematics-Project/kuka_arm/models
-  export ROS_IP=localhost
-  ########################################################################################
+  #export ROS_IP=`echo $(hostname -I)` 
+  export ROS_IP=192.168.1.19
+  
+  # RoboND Proj2
+  #export CATKIN_WS=$HOME/AAAProjects/AAAUdacity/roboND/Proj2_RosPickPlace/catkin_ws 
+  #export GAZEBO_MODEL_PATH=$CATKIN_WS/src/RoboND-Kinematics-Project/kuka_arm/models
+
+  # RoboND Proj3 Exer1,2
+  #export CATKIN_WS=$HOME/AAAProjects/AAAUdacity/roboND/Proj3_3dPerception/RoboND-Perception-Exercises/catkin_ws
+  #export GAZEBO_MODEL_PATH=$CATKIN_WS/src/sensor_stick/models
+
+  # RoboND Proj3 Exer3
+  #export CATKIN_WS=$HOME/AAAProjects/AAAUdacity/roboND/Proj3_3dPerception/RoboND-Perception-Exercises/catkin_ws3
+  #export GAZEBO_MODEL_PATH=~$CATKIN_WS/src/sensor_stick/models
+
+  # RoboND Proj3 
+  export CATKIN_WS=$HOME/AAAProjects/AAAUdacity/roboND/Proj3_3dPerception/Proj3_Root/catkin_ws
+  export GAZEBO_MODEL_PATH=$CATKIN_WS/src/RoboND-Perception-Project/pr2_robot/models
+
+  source $CATKIN_WS/devel/setup.bash
+  echo "ROS sourced." 
+  echo "        CATKIN_WS = $CATKIN_WS"
+  echo "GAZEBO_MODEL_PATH = $GAZEBO_MODEL_PATH"
+
   break
 elif [ "$input_choice" = "n" ]
 then
-  echo "ROS *NOT* sourced!"
+  echo "ROS *NOT* sourced"
   # Setup conda
   export PATH="/home/cl/apps/anaconda3/bin:$PATH"
   break

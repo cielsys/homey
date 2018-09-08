@@ -1,0 +1,20 @@
+#!/bin/bash
+
+if [ "$#" -ne 1 ]; then
+    echo "Missing Newlink arg"
+    echo "Usage: cdzset $0 Newlink"
+    echo "Creates ~/zNewlink -> CurDir"
+    exit
+fi
+
+newlink=~/z$1
+linktarget=$PWD
+
+if [ -L $newlink ]; then
+    echo "removing old link"
+    rm $newlink
+fi
+
+echo "linking $newlink -> $linktarget"
+
+ln -s $linktarget $newlink

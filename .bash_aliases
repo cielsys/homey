@@ -15,6 +15,8 @@ if [ -x /usr/bin/dircolors ]; then
     alias egrep='egrep --color=auto'
 fi
 
+# Make cd to symlink follow link
+alias cd='cd -P '
 alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
@@ -24,18 +26,31 @@ alias hhh="history "
 alias hhg="history | grep -i "
 alias kk='kill -9 '
 
-alias mmm="source ~/bin/ros_make.bash"
 alias psg="ps -aux | grep -i "
-alias sds="source ~/catkin_ws/devel/setup.bash"
 alias envg="env | grep -i "
 
-alias ros_kill="killall gazebo & killall gzserver & killall gzclient"
+alias ros_kill="killall gazebo & killall gzserver & killall gzclient & pkill -f ros &"
+alias sds="source ~/catkin_ws/devel/setup.bash"
+alias mmm="source ~/bin/ros_make.bash"
 
 function cdz(){
-    if [ -L "z$1" ]; then
-       echo "z$1 Does not exist "
-       rm $newlink
+    zdir="$HOME/z$1"
+    echo "zdir = $zdir"
+    if [ ! -L "$zdir" ]; then
+       echo "$zdir Does not exist "
+    else
+        pushd .
+        # -P makes it go to the actual dir
+        cd -P "$zdir"
     fi
+}
 
-    pushdir ~z$1
+alias cdc="pushd $CATKIN_WS"
+function ros_make(){
+    # Change to project root. Relies on cdc alias and $CATKIN_WS env var
+    cdc
+    catkin_make
+
+    # TODO: check retval of make
+    source devel/setup.bash
 }
