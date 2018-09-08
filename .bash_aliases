@@ -29,9 +29,9 @@ alias kk='kill -9 '
 alias psg="ps -aux | grep -i "
 alias envg="env | grep -i "
 
+alias pycharm="/opt/pycharm-community-2018.2.2/bin/pycharm.sh"
+
 alias ros_kill="killall gazebo & killall gzserver & killall gzclient & pkill -f ros &"
-alias sds="source ~/catkin_ws/devel/setup.bash"
-alias mmm="source ~/bin/ros_make.bash"
 
 function cdz(){
     zdir="$HOME/z$1"
