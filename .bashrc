@@ -76,10 +76,6 @@ xterm*|rxvt*)
     ;;
 esac
 
-if [ -f ~/.bash_aliases ]; then
-    source ~/.bash_aliases
-fi
-
 if [ -f ~/.bash_emacs ]; then
     source ~/.bash_emacs
 fi
@@ -167,3 +163,9 @@ else
 fi
 
 done
+
+
+if [ -f ~/.bash_aliases ]; then
+    source ~/.bash_aliases
+fi
+
