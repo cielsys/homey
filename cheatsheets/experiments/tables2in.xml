@@ -1,0 +1,1104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="tables2in.xsl"?>
+
+<tables-container>
+
+  <h2>Files</h2>
+  <table class="muse-table" border="2" cellpadding="5">
+    <tbody>
+      <tr>
+        <td>
+        <strong>read</strong> a file into Emacs</td>
+        <td>C-x C-f</td>
+      </tr>
+      <tr>
+        <td>
+        <strong>save</strong> a file back to disk</td>
+        <td>C-x C-s</td>
+      </tr>
+      <tr>
+        <td>save <strong>all</strong> files</td>
+        <td>C-x s</td>
+      </tr>
+      <tr>
+        <td>
+        <strong>insert</strong> another file into this buffer</td>
+        <td>C-x i</td>
+      </tr>
+      <tr>
+        <td>replace this file with another file</td>
+        <td>C-x C-v</td>
+      </tr>
+      <tr>
+        <td>write buffer to a specified file</td>
+        <td>C-x C-w</td>
+      </tr>
+      <tr>
+        <td>toggle read-only status of buffer</td>
+        <td>C-x C-q</td>
+      </tr>
+    </tbody>
+  </table>
+  <h2>Getting Help</h2>
+  <table class="muse-table" border="2" cellpadding="5">
+    <tbody>
+      <tr>
+        <td>remove help window</td>
+        <td>C-x 1</td>
+      </tr>
+      <tr>
+        <td>scroll help window</td>
+        <td>C-M-v</td>
+      </tr>
+      <tr>
+        <td>apropos: show commands matching a string</td>
+        <td>C-h a</td>
+      </tr>
+      <tr>
+        <td>describe the function a key runs</td>
+        <td>C-h k</td>
+      </tr>
+      <tr>
+        <td>describe a function</td>
+        <td>C-h f</td>
+      </tr>
+      <tr>
+        <td>get mode-specific information</td>
+        <td>C-h m</td>
+      </tr>
+    </tbody>
+  </table>
+  <h2>Error Recovery</h2>
+  <table class="muse-table" border="2" cellpadding="5">
+    <tbody>
+      <tr>
+        <td>
+        <strong>abort</strong> partially typed or executing command</td>
+        <td>C-g</td>
+      </tr>
+      <tr>
+        <td>
+        <strong>recover</strong> files lost by a system crash</td>
+        <td>M-x recover-session</td>
+      </tr>
+      <tr>
+        <td>
+        <strong>undo</strong> an unwanted change</td>
+        <td>C-x u, C-_ or C-/</td>
+      </tr>
+      <tr>
+        <td>restore a buffer to its original contents</td>
+        <td>M-x revert-buffer</td>
+      </tr>
+      <tr>
+        <td>redraw garbled screen</td>
+        <td>C-l</td>
+      </tr>
+    </tbody>
+  </table>
+  <h2>Incremental Search</h2>
+  <table class="muse-table" border="2" cellpadding="5">
+    <tbody>
+      <tr>
+        <td>search forward</td>
+        <td>C-s</td>
+      </tr>
+      <tr>
+        <td>search backward</td>
+        <td>C-r</td>
+      </tr>
+      <tr>
+        <td>regular expression search</td>
+        <td>C-M-s</td>
+      </tr>
+      <tr>
+        <td>reverse regular expression search</td>
+        <td>C-M-r</td>
+      </tr>
+    </tbody>
+  </table>
+  <h2>in i-search mode:</h2>
+  <table class="muse-table" border="2" cellpadding="5">
+    <tbody>
+      <tr>
+        <td>select previous search string</td>
+        <td>M-p</td>
+      </tr>
+      <tr>
+        <td>select next later search string</td>
+        <td>M-n</td>
+      </tr>
+      <tr>
+        <td>exit incremental search</td>
+        <td>RET</td>
+      </tr>
+      <tr>
+        <td>undo effect of last character</td>
+        <td>DEL</td>
+      </tr>
+      <tr>
+        <td>abort current search</td>
+        <td>C-g</td>
+      </tr>
+    </tbody>
+  </table>
+  <h2>Motion</h2>
+  <table class="muse-table" border="2" cellpadding="5">
+    <tbody>
+      <tr>
+        <td>
+          <strong>entity to move over</strong>
+        </td>
+        <td>
+          <strong>backward</strong>
+        </td>
+        <td>
+          <strong>forward</strong>
+        </td>
+      </tr>
+      <tr>
+        <td>character</td>
+        <td>C-b</td>
+        <td>C-f</td>
+      </tr>
+      <tr>
+        <td>word</td>
+        <td>M-b</td>
+        <td>M-f</td>
+      </tr>
+      <tr>
+        <td>line</td>
+        <td>C-p</td>
+        <td>C-n</td>
+      </tr>
+      <tr>
+        <td>goto line beginning (or end)</td>
+        <td>C-a</td>
+        <td>C-e</td>
+      </tr>
+      <tr>
+        <td>sentence</td>
+        <td>M-a</td>
+        <td>M-e</td>
+      </tr>
+      <tr>
+        <td>paragraph</td>
+        <td>M-{</td>
+        <td>M-}</td>
+      </tr>
+      <tr>
+        <td>page</td>
+        <td>C-x [</td>
+        <td>C-x ]</td>
+      </tr>
+      <tr>
+        <td>sexp (balanced expression)</td>
+        <td>C-M-b</td>
+        <td>C-M-f</td>
+      </tr>
+      <tr>
+        <td>function</td>
+        <td>C-M-a</td>
+        <td>C-M-e</td>
+      </tr>
+      <tr>
+        <td>goto buffer beginning (or end)</td>
+        <td>M-&lt;</td>
+        <td>M-&gt;</td>
+      </tr>
+    </tbody>
+  </table>
+  <table class="muse-table" border="2" cellpadding="5">
+    <tbody>
+      <tr>
+        <td>scroll to next screen</td>
+        <td>C-v</td>
+      </tr>
+      <tr>
+        <td>scroll to previous screen</td>
+        <td>M-v</td>
+      </tr>
+      <tr>
+        <td>scroll left</td>
+        <td>C-x &lt;</td>
+      </tr>
+      <tr>
+        <td>scroll right</td>
+        <td>C-x &gt;</td>
+      </tr>
+      <tr>
+        <td>scroll current line to center of screen</td>
+        <td>C-u C-l</td>
+      </tr>
+    </tbody>
+  </table>
+  <h2>Kill and Deleting</h2>
+  <table class="muse-table" border="2" cellpadding="5">
+    <tbody>
+      <tr>
+        <td>
+          <strong>entity to kill</strong>
+        </td>
+        <td>
+          <strong>backward</strong>
+        </td>
+        <td>
+          <strong>forward</strong>
+        </td>
+      </tr>
+      <tr>
+        <td>character (delete, not kill)</td>
+        <td>DEL</td>
+        <td>C-d</td>
+      </tr>
+      <tr>
+        <td>word</td>
+        <td>M-DEL</td>
+        <td>M-d</td>
+      </tr>
+      <tr>
+        <td>line (to end of)</td>
+        <td>M-0 C-k</td>
+        <td>C-k</td>
+      </tr>
+      <tr>
+        <td>sentence</td>
+        <td>C-x DEL</td>
+        <td>M-k</td>
+      </tr>
+      <tr>
+        <td>sexp (balanced expression)</td>
+        <td>M— C-M-k</td>
+        <td>C-M-k</td>
+      </tr>
+    </tbody>
+  </table>
+  <table class="muse-table" border="2" cellpadding="5">
+    <tbody>
+      <tr>
+        <td>kill <strong>region</strong>
+        </td>
+        <td>C-w</td>
+      </tr>
+      <tr>
+        <td>copy region to kill ring</td>
+        <td>M-w</td>
+      </tr>
+      <tr>
+        <td>kill through next occurrence of <em>char</em>
+        </td>
+        <td>M-z <em>char</em>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <table class="muse-table" border="2" cellpadding="5">
+    <tbody>
+      <tr>
+        <td>yank back last thing kill</td>
+        <td>C-y</td>
+      </tr>
+      <tr>
+        <td>replace last yank with previous kill</td>
+        <td>M-y</td>
+      </tr>
+    </tbody>
+  </table>
+  <h2>Marking</h2>
+  <table class="muse-table" border="2" cellpadding="5">
+    <tbody>
+      <tr>
+        <td>set mark here</td>
+        <td>C-@ or C-SPC</td>
+      </tr>
+      <tr>
+        <td>exchange point and mark</td>
+        <td>C-x C-x</td>
+      </tr>
+      <tr>
+        <td>set mark <em>arg</em> words away</td>
+        <td>M-@</td>
+      </tr>
+      <tr>
+        <td>mark <strong>paragraph</strong>
+        </td>
+        <td>M-h</td>
+      </tr>
+      <tr>
+        <td>mark <strong>page</strong>
+        </td>
+        <td>C-x C-p</td>
+      </tr>
+      <tr>
+        <td>mark <strong>sexp</strong>
+        </td>
+        <td>C-M-@</td>
+      </tr>
+      <tr>
+        <td>mark <strong>function</strong>
+        </td>
+        <td>C-x h</td>
+      </tr>
+    </tbody>
+  </table>
+  <h2>Query Replace</h2>
+  <table class="muse-table" border="2" cellpadding="5">
+    <tbody>
+      <tr>
+        <td>interactively replace a text string</td>
+        <td>M-%</td>
+      </tr>
+      <tr>
+        <td>using regular expressions</td>
+        <td>M-x query-replace-regexp</td>
+      </tr>
+    </tbody>
+  </table>
+  <h2>Valid responses in query-replace mode are: </h2>
+  <table class="muse-table" border="2" cellpadding="5">
+    <tbody>
+      <tr>
+        <td>
+        <strong>replace</strong> this one, go on to next</td>
+        <td>SPC</td>
+      </tr>
+      <tr>
+        <td>replace this one, don't move</td>
+        <td>,</td>
+      </tr>
+      <tr>
+        <td>
+        <strong>skip</strong> to next without replacing</td>
+        <td>DEL</td>
+      </tr>
+      <tr>
+        <td>replace all remaining matches</td>
+        <td>!</td>
+      </tr>
+      <tr>
+        <td>
+        <strong>back up</strong> to previous match</td>
+        <td>^</td>
+      </tr>
+      <tr>
+        <td>
+        <strong>exit</strong> query-replace</td>
+        <td>RET</td>
+      </tr>
+      <tr>
+        <td>enter recursive edit (C-M-c to exit)</td>
+        <td>C-r</td>
+      </tr>
+    </tbody>
+  </table>
+  <h2>Multiple Windows</h2>
+  <table class="muse-table" border="2" cellpadding="5">
+    <tbody>
+      <tr>
+        <td>delete all other windows</td>
+        <td>C-x 1</td>
+        <td>C-x 5 1</td>
+      </tr>
+      <tr>
+        <td>split window, above and below</td>
+        <td>C-x 2</td>
+        <td>C-x 5 2</td>
+      </tr>
+      <tr>
+        <td>delete this window</td>
+        <td>C-x 0</td>
+        <td>C-x 5 0</td>
+      </tr>
+      <tr>
+        <td>split window, side by side</td>
+        <td>C-x 3</td>
+      </tr>
+      <tr>
+        <td>scroll other window</td>
+        <td>C-M-v</td>
+      </tr>
+      <tr>
+        <td>switch cursor to other window</td>
+        <td>C-x o</td>
+        <td>C-x 5 o</td>
+      </tr>
+      <tr>
+        <td>select buffer in other window</td>
+        <td>C-x 4 b</td>
+        <td>C-x 5 b</td>
+      </tr>
+      <tr>
+        <td>display buffer in other window</td>
+        <td>C-x 4 C-o</td>
+        <td>C-x 5 C-o</td>
+      </tr>
+      <tr>
+        <td>find file in other window</td>
+        <td>C-x 4 f</td>
+        <td>C-x 5 f</td>
+      </tr>
+      <tr>
+        <td>find file read-only in other window</td>
+        <td>C-x 4 r</td>
+        <td>C-x 5 r</td>
+      </tr>
+      <tr>
+        <td>run Dired in other window</td>
+        <td>C-x 4 d</td>
+        <td>C-x 5 d</td>
+      </tr>
+      <tr>
+        <td>find tag in other window</td>
+        <td>C-x 4 .</td>
+        <td>C-x 5 .</td>
+      </tr>
+      <tr>
+        <td>grow window taller</td>
+        <td>C-x ^</td>
+      </tr>
+      <tr>
+        <td>shrink window narrower</td>
+        <td>C-x {</td>
+      </tr>
+      <tr>
+        <td>grow window wider</td>
+        <td>C-x }</td>
+      </tr>
+    </tbody>
+  </table>
+  <h2>Formatting</h2>
+  <table class="muse-table" border="2" cellpadding="5">
+    <tbody>
+      <tr>
+        <td>indent current <strong>line</strong> (mode-dependent)</td>
+        <td>TAB</td>
+      </tr>
+      <tr>
+        <td>indent <strong>region</strong> (mode-dependent)</td>
+        <td>C-M-\</td>
+      </tr>
+      <tr>
+        <td>indent <strong>sexp</strong> (mode-dependent)</td>
+        <td>C-M-q</td>
+      </tr>
+      <tr>
+        <td>indent region rigidly <em>arg</em> columns</td>
+        <td>C-x TAB</td>
+      </tr>
+    </tbody>
+  </table>
+  <table class="muse-table" border="2" cellpadding="5">
+    <tbody>
+      <tr>
+        <td>insert newline after point</td>
+        <td>C-o</td>
+      </tr>
+      <tr>
+        <td>move rest of line vertically down</td>
+        <td>C-M-o</td>
+      </tr>
+      <tr>
+        <td>delete blank lines around point</td>
+        <td>C-x C-o</td>
+      </tr>
+      <tr>
+        <td>join line with previous (with arg, next)</td>
+        <td>M-^</td>
+      </tr>
+      <tr>
+        <td>delete all white space around point</td>
+        <td>M-\</td>
+      </tr>
+      <tr>
+        <td>put exactly one space at point</td>
+        <td>M-SPC</td>
+      </tr>
+    </tbody>
+  </table>
+  <table class="muse-table" border="2" cellpadding="5">
+    <tbody>
+      <tr>
+        <td>fill paragraph</td>
+        <td>M-q</td>
+      </tr>
+      <tr>
+        <td>set fill column</td>
+        <td>C-x f</td>
+      </tr>
+      <tr>
+        <td>set prefix each line starts with</td>
+        <td>C-x .</td>
+      </tr>
+    </tbody>
+  </table>
+  <table class="muse-table" border="2" cellpadding="5">
+    <tbody>
+      <tr>
+        <td>set face</td>
+        <td>M-o</td>
+      </tr>
+    </tbody>
+  </table>
+  <h2>Case Change</h2>
+  <table class="muse-table" border="2" cellpadding="5">
+    <tbody>
+      <tr>
+        <td>uppercase word</td>
+        <td>M-u</td>
+      </tr>
+      <tr>
+        <td>lowercase word</td>
+        <td>M-l</td>
+      </tr>
+      <tr>
+        <td>capitalize word</td>
+        <td>M-c</td>
+      </tr>
+      <tr>
+        <td>uppercase region</td>
+        <td>C-x C-u</td>
+      </tr>
+      <tr>
+        <td>lowercase region</td>
+        <td>C-x C-l</td>
+      </tr>
+    </tbody>
+  </table>
+  <h2>The Minibuffer</h2>
+  <p class="first">The following keys are defined in the minibuffer.</p>
+  <table class="muse-table" border="2" cellpadding="5">
+    <tbody>
+      <tr>
+        <td>complete as much as possible</td>
+        <td>TAB</td>
+      </tr>
+      <tr>
+        <td>complete up to one word</td>
+        <td>SPC</td>
+      </tr>
+      <tr>
+        <td>complete and execute</td>
+        <td>RET</td>
+      </tr>
+      <tr>
+        <td>show possible completions</td>
+        <td>?</td>
+      </tr>
+      <tr>
+        <td>fetch previous minibuffer input</td>
+        <td>M-p</td>
+      </tr>
+      <tr>
+        <td>fetch next minibuffer input or default</td>
+        <td>M-n</td>
+      </tr>
+      <tr>
+        <td>regexp search backward through history</td>
+        <td>M-r</td>
+      </tr>
+      <tr>
+        <td>regexp search forward through history</td>
+        <td>M-s</td>
+      </tr>
+      <tr>
+        <td>abort command</td>
+        <td>C-g</td>
+      </tr>
+      <tr>
+        <td>Repeat last mini buf command</td>
+        <td>C-x ESC ESC or C-x M-:</td>
+      </tr>
+    </tbody>
+  </table>
+  <h2>Buffers</h2>
+  <table class="muse-table" border="2" cellpadding="5">
+    <tbody>
+      <tr>
+        <td>select another buffer</td>
+        <td>C-x b</td>
+      </tr>
+      <tr>
+        <td>list all buffers</td>
+        <td>C-x C-b</td>
+      </tr>
+      <tr>
+        <td>kill a buffer</td>
+        <td>C-x k</td>
+      </tr>
+    </tbody>
+  </table>
+  <h2>Transposing</h2>
+  <table class="muse-table" border="2" cellpadding="5">
+    <tbody>
+      <tr>
+        <td>transpose <strong>characters</strong>
+        </td>
+        <td>C-t</td>
+      </tr>
+      <tr>
+        <td>transpose <strong>words</strong>
+        </td>
+        <td>M-t</td>
+      </tr>
+      <tr>
+        <td>transpose <strong>lines</strong>
+        </td>
+        <td>C-x C-t</td>
+      </tr>
+      <tr>
+        <td>transpose sexps</td>
+        <td>C-M-t</td>
+      </tr>
+    </tbody>
+  </table>
+  <h2>Spelling Check</h2>
+  <table class="muse-table" border="2" cellpadding="5">
+    <tbody>
+      <tr>
+        <td>check spelling of current word</td>
+        <td>M-$</td>
+      </tr>
+      <tr>
+        <td>check spelling of all words in region</td>
+        <td>M-x ispell-region</td>
+      </tr>
+      <tr>
+        <td>check spelling of entire buffer</td>
+        <td>M-x ispell-buffer</td>
+      </tr>
+    </tbody>
+  </table>
+  <h2>Tags</h2>
+  <table class="muse-table" border="2" cellpadding="5">
+    <tbody>
+      <tr>
+        <td>find a tag (a definition)</td>
+        <td>M-.</td>
+      </tr>
+      <tr>
+        <td>find next occurrence of tag</td>
+        <td>C-u M-.</td>
+      </tr>
+      <tr>
+        <td>specify a new tags file</td>
+        <td>M-x visit-tags-table</td>
+      </tr>
+    </tbody>
+  </table>
+  <table class="muse-table" border="2" cellpadding="5">
+    <tbody>
+      <tr>
+        <td>regexp search on all files in tags table</td>
+        <td>M-x tags-search</td>
+      </tr>
+      <tr>
+        <td>run query-replace on all the files</td>
+        <td>M-x tags-query-replace</td>
+      </tr>
+      <tr>
+        <td>continue last tags search or query-replace</td>
+        <td>M-,</td>
+      </tr>
+    </tbody>
+  </table>
+  <h2>Shells</h2>
+  <table class="muse-table" border="2" cellpadding="5">
+    <tbody>
+      <tr>
+        <td>execute a shell command</td>
+        <td>M-!</td>
+      </tr>
+      <tr>
+        <td>run a shell command on the region</td>
+        <td>M-|</td>
+      </tr>
+      <tr>
+        <td>filter region through a shell command</td>
+        <td>C-u M-|</td>
+      </tr>
+      <tr>
+        <td>start a shell command in window \*shell\*</td>
+        <td>M-x shell</td>
+      </tr>
+    </tbody>
+  </table>
+  <h2>Rectangles</h2>
+  <table class="muse-table" border="2" cellpadding="5">
+    <tbody>
+      <tr>
+        <td>copy rectangle to register</td>
+        <td>C-x r r</td>
+      </tr>
+      <tr>
+        <td>kill rectangle</td>
+        <td>C-x r k</td>
+      </tr>
+      <tr>
+        <td>yank rectangle</td>
+        <td>C-x r y</td>
+      </tr>
+      <tr>
+        <td>open rectangle, shifting text right</td>
+        <td>C-x r o</td>
+      </tr>
+      <tr>
+        <td>blank out rectangle</td>
+        <td>C-x r c</td>
+      </tr>
+      <tr>
+        <td>prefix each line with a string</td>
+        <td>C-x r t</td>
+      </tr>
+    </tbody>
+  </table>
+  <h2>Abbrevs</h2>
+  <table class="muse-table" border="2" cellpadding="5">
+    <tbody>
+      <tr>
+        <td>add global abbrev</td>
+        <td>C-x a g</td>
+      </tr>
+      <tr>
+        <td>add mode-local abbrev</td>
+        <td>C-x a l</td>
+      </tr>
+      <tr>
+        <td>add global expansion for this abbrev</td>
+        <td>C-x a i g</td>
+      </tr>
+      <tr>
+        <td>add mode-local expansion for this abbrev</td>
+        <td>C-x a i l</td>
+      </tr>
+      <tr>
+        <td>explicitly expand abbrev</td>
+        <td>C-x a e</td>
+      </tr>
+    </tbody>
+  </table>
+  <table class="muse-table" border="2" cellpadding="5">
+    <tbody>
+      <tr>
+        <td>expand previous word dynamically</td>
+        <td>M-/</td>
+      </tr>
+    </tbody>
+  </table>
+  <h2>Regular Expressions</h2>
+  <table class="muse-table" border="2" cellpadding="5">
+    <tbody>
+      <tr>
+        <td>any single character except a newline</td>
+        <td>. (dot)</td>
+      </tr>
+      <tr>
+        <td>zero or more repeats</td>
+        <td>*</td>
+      </tr>
+      <tr>
+        <td>one or more repeats</td>
+        <td>+</td>
+      </tr>
+      <tr>
+        <td>zero or one repeat</td>
+        <td>?</td>
+      </tr>
+      <tr>
+        <td>quote regular expression special character</td>
+        <td>\c</td>
+      </tr>
+      <tr>
+        <td>alternative ("or")</td>
+        <td>\|</td>
+      </tr>
+      <tr>
+        <td>grouping</td>
+        <td>\( ... \)</td>
+      </tr>
+      <tr>
+        <td>same text as nth group</td>
+        <td>\n</td>
+      </tr>
+      <tr>
+        <td>at word break</td>
+        <td>\b</td>
+      </tr>
+      <tr>
+        <td>not at word break</td>
+        <td>\B</td>
+      </tr>
+    </tbody>
+  </table>
+  <h2>Regex Cont</h2>
+  <table class="muse-table" border="2" cellpadding="5">
+    <tbody>
+      <tr>
+        <td>
+          <strong>entity</strong>
+        </td>
+        <td>
+          <strong>match start</strong>
+        </td>
+        <td>
+          <strong>match end</strong>
+        </td>
+      </tr>
+      <tr>
+        <td>line</td>
+        <td>^</td>
+        <td>$</td>
+      </tr>
+      <tr>
+        <td>word</td>
+        <td>\&lt;</td>
+        <td>\&gt;</td>
+      </tr>
+      <tr>
+        <td>buffer</td>
+        <td>\`</td>
+        <td>\'</td>
+      </tr>
+    </tbody>
+  </table>
+  <h2> RegEx Char Class</h2>
+  <table class="muse-table" border="2" cellpadding="5">
+    <tbody>
+      <tr>
+        <td>
+          <strong>class of characters</strong>
+        </td>
+        <td>
+          <strong>match these</strong>
+        </td>
+        <td>
+          <strong>match others</strong>
+        </td>
+      </tr>
+      <tr>
+        <td>explicit set</td>
+        <td>[ ... ]</td>
+        <td>[^ ... ]</td>
+      </tr>
+      <tr>
+        <td>word-syntax character</td>
+        <td>\w</td>
+        <td>\W</td>
+      </tr>
+      <tr>
+        <td>character with syntax <em>c</em>
+        </td>
+        <td>\sc</td>
+        <td>\Sc</td>
+      </tr>
+    </tbody>
+  </table>
+  <h2>International Character Sets</h2>
+  <table class="muse-table" border="2" cellpadding="5">
+    <tbody>
+      <tr>
+        <td>specify principal language</td>
+        <td>C-x RET l</td>
+      </tr>
+      <tr>
+        <td>show all input methods</td>
+        <td>M-x list-input-methods</td>
+      </tr>
+      <tr>
+        <td>enable or disable input method</td>
+        <td>C-\</td>
+      </tr>
+      <tr>
+        <td>set coding system for next command</td>
+        <td>C-x RET c</td>
+      </tr>
+      <tr>
+        <td>show all coding systems</td>
+        <td>M-x list-coding-systems</td>
+      </tr>
+      <tr>
+        <td>choose preferred coding system</td>
+        <td>M-x prefer-coding-system</td>
+      </tr>
+    </tbody>
+  </table>
+  <h2>Info</h2>
+  <table class="muse-table" border="2" cellpadding="5">
+    <tbody>
+      <tr>
+        <td>enter the Info documentation reader</td>
+        <td>C-h i</td>
+      </tr>
+      <tr>
+        <td>find specified function or variable in Info</td>
+        <td>C-h S</td>
+      </tr>
+    </tbody>
+  </table>
+  <h2>Moving within a node:</h2>
+  <table class="muse-table" border="2" cellpadding="5">
+    <tbody>
+      <tr>
+        <td>scroll forward</td>
+        <td>SPC</td>
+      </tr>
+      <tr>
+        <td>scroll reverse</td>
+        <td>DEL</td>
+      </tr>
+      <tr>
+        <td>beginning of node</td>
+        <td>. (dot)</td>
+      </tr>
+    </tbody>
+  </table>
+  <h2>Moving between nodes:</h2>
+  <table class="muse-table" border="2" cellpadding="5">
+    <tbody>
+      <tr>
+        <td>
+        <strong>next</strong> node</td>
+        <td>n</td>
+      </tr>
+      <tr>
+        <td>
+        <strong>previous</strong> node</td>
+        <td>p</td>
+      </tr>
+      <tr>
+        <td>move <strong>up</strong>
+        </td>
+        <td>u</td>
+      </tr>
+      <tr>
+        <td>select menu item by name</td>
+        <td>m</td>
+      </tr>
+      <tr>
+        <td>select nth menu item by number (1-9)</td>
+        <td>
+          <em>n</em>
+        </td>
+      </tr>
+      <tr>
+        <td>follow cross reference (return with l)</td>
+        <td>f</td>
+      </tr>
+      <tr>
+        <td>return to last node you saw</td>
+        <td>l</td>
+      </tr>
+      <tr>
+        <td>return to directory node</td>
+        <td>d</td>
+      </tr>
+      <tr>
+        <td>go to top node of Info file</td>
+        <td>t
+        </td>
+      </tr>
+      <tr>
+        <td>go to any node by name</td>
+        <td>g</td>
+      </tr>
+    </tbody>
+  </table>
+  <h2>Other:</h2>
+  <table class="muse-table" border="2" cellpadding="5">
+    <tbody>
+      <tr>
+        <td>run Info <strong>tutorial</strong>
+        </td>
+        <td>h</td>
+      </tr>
+      <tr>
+        <td>
+        <strong>quit</strong> Info</td>
+        <td>q</td>
+      </tr>
+      <tr>
+        <td>search nodes for regexp</td>
+        <td>M-s</td>
+      </tr>
+    </tbody>
+  </table>
+  <h2>Registers</h2>
+  <table class="muse-table" border="2" cellpadding="5">
+    <tbody>
+      <tr>
+        <td>save region into register</td>
+        <td>C-x r s</td>
+      </tr>
+      <tr>
+        <td>insert register contents into buffer</td>
+        <td>C-x r i</td>
+      </tr>
+      <tr>
+        <td>save value of point in register</td>
+        <td>C-x r SPC</td>
+      </tr>
+      <tr>
+        <td>jump to point saved in register</td>
+        <td>C-x r j</td>
+      </tr>
+    </tbody>
+  </table>
+  <h2>Keyboard Macros</h2>
+  <table class="muse-table" border="2" cellpadding="5">
+    <tbody>
+      <tr>
+        <td>
+        <strong>start</strong> defining a keyboard macro</td>
+        <td>C-x (</td>
+      </tr>
+      <tr>
+        <td>
+        <strong>end</strong> keyboard macro definition</td>
+        <td>C-x )</td>
+      </tr>
+      <tr>
+        <td>
+        <strong>execute</strong> last-defined keyboard macro</td>
+        <td>C-x e</td>
+      </tr>
+      <tr>
+        <td>append to last keyboard macro</td>
+        <td>C-u C-x (</td>
+      </tr>
+      <tr>
+        <td>name last keyboard macro</td>
+        <td>M-x name-last-kbd-macro</td>
+      </tr>
+      <tr>
+        <td>insert Lisp definition in buffer</td>
+        <td>M-x insert-kbd-macro</td>
+      </tr>
+    </tbody>
+  </table>
+  <h2>Commands dealing with Emacs Lisp</h2>
+  <table class="muse-table" border="2" cellpadding="5">
+    <tbody>
+      <tr>
+        <td>eval <strong>sexp</strong> before point</td>
+        <td>C-x C-e</td>
+      </tr>
+      <tr>
+        <td>eval current <strong>defun</strong>
+        </td>
+        <td>C-M-x</td>
+      </tr>
+      <tr>
+        <td>eval <strong>region</strong>
+        </td>
+        <td>M-x eval-region</td>
+      </tr>
+      <tr>
+        <td>read and eval minibuffer</td>
+        <td>M-:</td>
+      </tr>
+      <tr>
+        <td>load from standard system directory</td>
+        <td>M-x load-library</td>
+      </tr>
+    </tbody>
+  </table>
+</tables-container>

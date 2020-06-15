@@ -30,8 +30,9 @@ alias psg="ps -aux | grep -i "
 alias envg="env | grep -i "
 
 alias pycharm="/opt/pycharm-community-2018.2.2/bin/pycharm.sh"
+alias processing="/opt/processing-3.4/processing"
 
-alias ros_kill="killall gazebo & killall gzserver & killall gzclient & pkill -f ros &"
+alias ros_kill="killall gazebo & killall gzserver & killall gzclient & pkill -f ros & pkill -f rtabmap & pkill -f gmapping"
 
 function cdz(){
     zdir="$HOME/z$1"
@@ -54,3 +55,9 @@ function ros_make(){
     # TODO: check retval of make
     source devel/setup.bash
 }
+
+alias sim=/media/cl/DDrive/AAAProjects/Udacity_self-driving-car-sim/carndsimcustom.x86_64
+alias simp5=/home/cl/apps/Udacity/carNDProj5_KalmanSim/term2_sim.x86_64
+# alias cl=/home/cl/apps/clion-2018.2.5/bin/clion.sh
+alias cl=/home/cl/apps/clion-2019.3.4/bin/clion.sh
+

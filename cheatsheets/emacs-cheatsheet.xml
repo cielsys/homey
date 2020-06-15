@@ -1,0 +1,1417 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="cheatsheet.xsl"?>
+
+<ecs>
+    <version>1.0</version>
+    <versiondate>2018-08-01</versiondate>
+    <copyright> &#x24B8; Copyright 2018 CLeith All Rights Reserved</copyright>  <layouts>
+	<layout paper-size="8x14in" orientation="landscape">
+	  <!-- Page 1 -->
+	  <page>
+		<col>
+		  <cmd-family cmd-family-name="Motion" pkg="emacs"  pkg-ver="23" />
+		  <cmd-family cmd-family-name="Files" pkg="emacs" pkg-ver="23" />
+		  <cmd-family cmd-family-name="Buffers" pkg="emacs" pkg-ver="23" />
+		  <cmd-family cmd-family-name="Registers" pkg="emacs" pkg-ver="23" />
+		  <cmd-family cmd-family-name="Rectangles" pkg="emacs" pkg-ver="23" />
+		</col>
+		<col>
+		  <cmd-family cmd-family-name="Killing and Deleting" pkg="emacs" pkg-ver="23" />
+		  <cmd-family cmd-family-name="Minibuffer" pkg="emacs" pkg-ver="23" />
+		  <cmd-family cmd-family-name="Multiple Windows" pkg="emacs" pkg-ver="23" />
+		</col>
+		<col>
+		  <cmd-family cmd-family-name="Marking" pkg="emacs" pkg-ver="23"/>
+		  <cmd-family cmd-family-name="Tags" pkg="emacs" pkg-ver="23"/>
+		  <cmd-family cmd-family-name="Abbrevs" pkg="emacs" pkg-ver="23"/>
+		  <cmd-family cmd-family-name="Formatting" pkg="emacs" pkg-ver="23"/>
+		</col>
+		<col>
+		  <cmd-family cmd-family-name="Incremental Search" pkg="emacs" pkg-ver="23"/>
+		  <cmd-family cmd-family-name="Query Replace" pkg="emacs" pkg-ver="23"/>		  
+		  <cmd-family cmd-family-name="Regular Expressions" pkg="emacs" pkg-ver="23"/>
+		</col>
+	  </page>
+
+	  <!-- Page 2 -->
+	  <page>
+		<col>
+		  <cmd-family cmd-family-name="Help" pkg="emacs" pkg-ver="23"/>
+		  <cmd-family cmd-family-name="Info" pkg="emacs" pkg-ver="23"/>
+		  <cmd-family cmd-family-name="Error Recovery" pkg="emacs" pkg-ver="23"/>
+		</col>
+		<col>
+		  <cmd-family cmd-family-name="Shells" pkg="emacs" pkg-ver="23"/>
+		  <cmd-family cmd-family-name="Case Change" pkg="emacs" pkg-ver="23"/>
+		  <cmd-family cmd-family-name="ELisp" pkg="emacs"/>
+		  <cmd-family cmd-family-name="Transposing" pkg="emacs" pkg-ver="23"/>
+		  <cmd-family cmd-family-name="Keyboard Macros" pkg="emacs"/>
+		</col>
+		<col>
+		  <cmd-family cmd-family-name="nXml" pkg="nXml"/>
+		</col>
+		<col>
+		  <cmd-family cmd-family-name="Mozrepl" pkg="mozrepl"/>
+		  <cmd-family cmd-family-name="My .emacs" pkg="init.el"/>
+		</col>
+	  </page>
+	</layout>
+  </layouts>
+  <!--================= End of Layouts ============= -->
+
+  <!-- ==================================================== -->
+  <cmd-family cmd-family-name="Motion" pkg="emacs" >
+    <cmd-table>
+      <col-header>entity to move over</col-header>
+      <col-header>backward</col-header>
+      <col-header>forward</col-header>
+      <cmd-list>
+        <cmd>
+          <cmd-desc>Character</cmd-desc>
+          <key-sequence>C-b</key-sequence>
+          <key-sequence>C-f</key-sequence>
+        </cmd>
+        <cmd>
+          <cmd-desc>Word</cmd-desc>
+          <key-sequence>M-b</key-sequence>
+          <key-sequence>M-f</key-sequence>
+        </cmd>
+        <cmd>
+          <cmd-desc>Line</cmd-desc>
+          <key-sequence>C-p</key-sequence>
+          <key-sequence>C-n</key-sequence>
+        </cmd>
+        <cmd>
+          <cmd-desc>Goto line beginning (or end)</cmd-desc>
+          <key-sequence>C-a</key-sequence>
+          <key-sequence>C-e</key-sequence>
+        </cmd>
+        <cmd>
+          <cmd-desc>Sentence</cmd-desc>
+          <key-sequence>M-a</key-sequence>
+          <key-sequence>M-e</key-sequence>
+        </cmd>
+        <cmd>
+          <cmd-desc>Paragraph</cmd-desc>
+          <key-sequence>M-{</key-sequence>
+          <key-sequence>M-}</key-sequence>
+        </cmd>
+        <cmd>
+          <cmd-desc>Page</cmd-desc>
+          <key-sequence>C-x [</key-sequence>
+          <key-sequence>C-x ]</key-sequence>
+        </cmd>
+        <cmd>
+          <cmd-desc>Sexp (balanced expression)</cmd-desc>
+          <key-sequence>C-M-b</key-sequence>
+          <key-sequence>C-M-f</key-sequence>
+        </cmd>
+        <cmd>
+          <cmd-desc>Function</cmd-desc>
+          <key-sequence>C-M-a</key-sequence>
+          <key-sequence>C-M-e</key-sequence>
+        </cmd>
+        <cmd>
+          <cmd-desc>Goto buffer end</cmd-desc>
+          <key-sequence>M-&lt;</key-sequence>
+          <key-sequence>M-&gt;</key-sequence>
+        </cmd>
+        <cmd>
+          <cmd-desc>Scroll screen vertical</cmd-desc>
+          <key-sequence>M-v</key-sequence>
+          <key-sequence>C-v</key-sequence>
+        </cmd>
+        <cmd>
+          <cmd-desc>Scroll sideways</cmd-desc>
+          <key-sequence>C-x &gt;</key-sequence>
+          <key-sequence>C-x &lt;</key-sequence>
+        </cmd>
+      </cmd-list>
+    </cmd-table>
+    <cmd-table>
+      <cmd-list>
+        <cmd>
+          <cmd-desc>Goto line number</cmd-desc>
+          <key-sequence>M-g g</key-sequence>
+        </cmd>
+        <cmd>
+          <cmd-desc>Goto prior mark locations</cmd-desc>
+          <key-sequence>C-u C-SPC</key-sequence>
+        </cmd>
+        <cmd>
+          <cmd-desc>Center current line</cmd-desc>
+          <key-sequence>C-u C-l</key-sequence>
+        </cmd>
+        <cmd>
+          <cmd-desc>First char of line</cmd-desc>
+          <key-sequence>M-m</key-sequence>
+        </cmd>
+      </cmd-list>
+    </cmd-table>
+  </cmd-family>
+  
+  <!-- ==================================================== -->
+  <cmd-family cmd-family-name="Killing and Deleting" pkg="emacs" pkg-ver="23">
+    <cmd-table>
+      <col-header>entity to kill</col-header>
+      <col-header>backward</col-header>
+      <col-header>forward</col-header>
+      <cmd-list>
+        <cmd>
+          <cmd-desc>Character (delete, not kill)</cmd-desc>
+          <key-sequence>DEL</key-sequence>
+          <key-sequence>C-d</key-sequence>
+        </cmd>
+        <cmd>
+          <cmd-desc>Word</cmd-desc>
+          <key-sequence>M-DEL</key-sequence>
+          <key-sequence>M-d</key-sequence>
+        </cmd>
+        <cmd>
+          <cmd-desc>Line (to end of)</cmd-desc>
+          <key-sequence>M-0 C-k</key-sequence>
+          <key-sequence>C-k</key-sequence>
+        </cmd>
+        <cmd>
+          <cmd-desc>Sentence</cmd-desc>
+          <key-sequence>C-x DEL</key-sequence>
+          <key-sequence>M-k</key-sequence>
+        </cmd>
+        <cmd>
+          <cmd-desc>Sexp (balanced expression)</cmd-desc>
+          <key-sequence>M-- C-M-k</key-sequence>
+          <key-sequence>C-M-k</key-sequence>
+        </cmd>
+      </cmd-list>
+    </cmd-table>
+
+    <cmd-table>
+      <cmd-list>
+        <cmd>
+          <cmd-desc>Kill region</cmd-desc>
+          <key-sequence>C-w</key-sequence>
+        </cmd>
+        <cmd>
+          <cmd-desc>Copy region to kill ring</cmd-desc>
+          <key-sequence>M-w</key-sequence>
+        </cmd>
+        <cmd>
+          <cmd-desc>Kill to next char</cmd-desc>
+          <key-sequence>M-z char</key-sequence>
+        </cmd>
+      </cmd-list>
+    </cmd-table>
+
+    <cmd-table>
+      <cmd-list>
+        <cmd>
+          <cmd-desc>Yank most recent kill</cmd-desc>
+          <key-sequence>C-y</key-sequence>
+        </cmd>
+        <cmd>
+          <cmd-desc>Replace yank with prior kill</cmd-desc>
+          <key-sequence>M-y</key-sequence>
+        </cmd>
+      </cmd-list>
+    </cmd-table>
+  </cmd-family>
+
+  <!-- ==================================================== -->
+  <cmd-family cmd-family-name="Marking" pkg="emacs" >
+    <cmd-table>
+      <cmd-list>
+        <cmd>
+          <cmd-desc>Set mark here</cmd-desc>
+          <key-sequence>C-@ or C-SPC</key-sequence>
+        </cmd>
+        <cmd>
+          <cmd-desc>Exchange point and mark</cmd-desc>
+          <key-sequence>C-x C-x</key-sequence>
+        </cmd>
+        <cmd>
+          <cmd-desc>Set mark arg words away</cmd-desc>
+          <key-sequence>M-@</key-sequence>
+        </cmd>
+        <cmd>
+          <cmd-desc>Mark paragraph</cmd-desc>
+          <key-sequence>M-h</key-sequence>
+        </cmd>
+        <cmd>
+          <cmd-desc>Mark page</cmd-desc>
+          <key-sequence>C-x C-p</key-sequence>
+        </cmd>
+        <cmd>
+          <cmd-desc>Mark sexp</cmd-desc>
+          <key-sequence>C-M-@</key-sequence>
+        </cmd>
+        <cmd>
+          <cmd-desc>Mark function</cmd-desc>
+          <key-sequence>C-M-h</key-sequence>
+        </cmd>
+        <cmd>
+          <cmd-desc>Mark whole buffer</cmd-desc>
+          <key-sequence>C-x h</key-sequence>
+        </cmd>
+        <cmd>
+          <cmd-desc>Mark rectangle</cmd-desc>
+          <key-sequence>C-SPC</key-sequence>
+        </cmd>
+      </cmd-list>
+    </cmd-table>
+  </cmd-family>
+
+
+  <!-- ==================================================== -->
+  <cmd-family cmd-family-name="Incremental Search" pkg="emacs">
+    <cmd-table table-name="main">
+      <col-header></col-header>
+      <col-header>backward</col-header>
+      <col-header>forward</col-header>
+      <cmd-list>
+        <cmd>
+          <cmd-desc>Search for string</cmd-desc>
+          <key-sequence>C-r</key-sequence>
+          <key-sequence>C-s</key-sequence>
+        </cmd>
+        <cmd>
+          <cmd-desc>Search for RegExp</cmd-desc>
+          <key-sequence>C-M-r</key-sequence>
+          <key-sequence>C-M-s</key-sequence>
+        </cmd>
+      </cmd-list>
+    </cmd-table>
+
+    <cmd-table table-name="IS-mode" caption="IS mode">
+      <cmd-list>
+        <cmd>
+          <cmd-desc>Select word at point</cmd-desc>
+          <key-sequence>C-w</key-sequence>
+        </cmd>
+        <cmd>
+          <cmd-desc>Select previous search string</cmd-desc>
+          <key-sequence>M-p</key-sequence>
+        </cmd>
+        <cmd>
+          <cmd-desc>Select next later search string</cmd-desc>
+          <key-sequence>M-n</key-sequence>
+        </cmd>
+        <cmd>
+          <cmd-desc>Exit incremental search</cmd-desc>
+          <key-sequence>RET</key-sequence>
+        </cmd>
+        <cmd>
+          <cmd-desc>Undo effect of last character</cmd-desc>
+          <key-sequence>DEL</key-sequence>
+        </cmd>
+        <cmd>
+          <cmd-desc>Abort current search</cmd-desc>
+          <key-sequence>C-g</key-sequence>
+        </cmd>
+      </cmd-list>
+    </cmd-table>
+  </cmd-family>
+
+
+  <!-- ==================================================== -->
+ <cmd-family cmd-family-name="Query Replace" pkg="emacs">
+    <cmd-table>
+      <cmd-list>
+        <cmd>
+          <cmd-desc>Qr string</cmd-desc>
+          <key-sequence>M-%</key-sequence>
+        </cmd>
+        <cmd>
+          <cmd-desc>Qr RegEx</cmd-desc>
+          <key-sequence>C-M-%</key-sequence>
+        </cmd>
+      </cmd-list>
+    </cmd-table>
+
+	<cmd-table table-name="QR-mode" caption="QR mode responses">
+     <cmd-list>
+        <cmd>
+          <cmd-desc>Replace this, continue</cmd-desc>
+          <key-sequence>SPC or y</key-sequence>
+        </cmd>
+        <cmd>
+          <cmd-desc>Replace all remaining matches</cmd-desc>
+          <key-sequence>!</key-sequence>
+        </cmd>
+        <cmd>
+          <cmd-desc>Skip this, continue</cmd-desc>
+          <key-sequence>DEL or n</key-sequence>
+        </cmd>
+        <cmd>
+          <cmd-desc>Replace this, don't move</cmd-desc>
+          <key-sequence>,</key-sequence>
+        </cmd>
+        <cmd>
+          <cmd-desc>Replace this, quit</cmd-desc>
+          <key-sequence>.</key-sequence>
+        </cmd>
+        <cmd>
+          <cmd-desc>Return to previous match</cmd-desc>
+          <key-sequence>^</key-sequence>
+        </cmd>
+        <cmd>
+          <cmd-desc>Enter Recursive edit (C-M-c to exit)</cmd-desc>
+          <key-sequence>C-r</key-sequence>
+        </cmd>
+		<cmd>
+          <cmd-desc>Delete match, enter Recursive edit</cmd-desc>
+          <key-sequence>C-w</key-sequence>
+        </cmd>
+        <cmd>
+          <cmd-desc>Edit replacement RegEx</cmd-desc>
+          <key-sequence>e</key-sequence>
+        </cmd>
+        <cmd>
+          <cmd-desc>Exit query-replace</cmd-desc>
+          <key-sequence>RET or q</key-sequence>
+        </cmd>
+      </cmd-list>
+    </cmd-table>
+  </cmd-family>
+
+  <!-- ==================================================== -->
+  <cmd-family cmd-family-name="Files" pkg="emacs" pkg-ver="23">
+    <cmd-table>
+      <cmd-list>
+        <cmd>
+          <cmd-desc><b>Open</b> file</cmd-desc>
+          <key-sequence>C-x C-f</key-sequence>
+        </cmd>
+        <cmd>
+          <cmd-desc><b>Save</b> file</cmd-desc>
+          <key-sequence>C-x C-s</key-sequence>
+        </cmd>
+        <cmd>
+          <cmd-desc><b>Save As</b> file</cmd-desc>
+          <key-sequence>C-x C-w</key-sequence>
+        </cmd>
+        <cmd>
+          <cmd-desc><b>Save All</b> files</cmd-desc>
+          <key-sequence>C-x s</key-sequence>
+        </cmd>
+        <cmd>
+          <cmd-desc>Insert file into this buffer</cmd-desc>
+          <key-sequence>C-x i</key-sequence>
+        </cmd>
+        <cmd>
+          <cmd-desc>Replace this file w another(Reload)</cmd-desc>
+          <key-sequence>C-x C-v</key-sequence>
+        </cmd>
+        <cmd>
+          <cmd-desc>Toggle read-Only status of buffer</cmd-desc>
+          <key-sequence>C-x C-q</key-sequence>
+        </cmd>
+      </cmd-list>
+    </cmd-table>
+  </cmd-family>
+
+  <!-- ==================================================== -->
+  <cmd-family cmd-family-name="Error Recovery" pkg="emacs">
+    <cmd-table>
+      <cmd-list>
+        <cmd>
+          <cmd-desc>Abort partially typed or executing command</cmd-desc>
+          <key-sequence>C-g</key-sequence>
+        </cmd>
+        <cmd>
+          <cmd-desc>Recover files lost by a system crash</cmd-desc>
+          <key-sequence>M-x recover-session</key-sequence>
+        </cmd>
+        <cmd>
+          <cmd-desc>Undo an unwanted change</cmd-desc>
+          <key-sequence>C-x u, C-_ or C-/</key-sequence>
+        </cmd>
+        <cmd>
+          <cmd-desc>Restore a buffer to its original contents</cmd-desc>
+          <key-sequence>M-x revert-buffer</key-sequence>
+        </cmd>
+        <cmd>
+          <cmd-desc>Redraw garbled screen</cmd-desc>
+          <key-sequence>C-l</key-sequence>
+        </cmd>
+      </cmd-list>
+    </cmd-table>
+  </cmd-family>
+  <!-- ==================================================== -->
+  <cmd-family cmd-family-name="Multiple Windows" pkg="emacs">
+    <cmd-table>
+      <col-header> </col-header>
+      <col-header>This frame</col-header>
+      <col-header>Other frame</col-header>
+      <cmd-list>
+        <cmd>
+          <cmd-desc>Delete this window</cmd-desc>
+          <key-sequence>C-x 0</key-sequence>
+          <key-sequence>C-x 5 0</key-sequence>
+        </cmd>
+        <cmd>
+          <cmd-desc>Delete all other windows</cmd-desc>
+          <key-sequence>C-x 1</key-sequence>
+          <key-sequence>C-x 5 1</key-sequence>
+        </cmd>
+        <cmd>
+          <cmd-desc>Split window, horizontal</cmd-desc>
+          <key-sequence>C-x 2</key-sequence>
+          <key-sequence>C-x 5 2</key-sequence>
+        </cmd>
+        <cmd>
+          <cmd-desc>Split window, side by side</cmd-desc>
+          <key-sequence>C-x 3</key-sequence>
+        </cmd>
+        <cmd>
+          <cmd-desc>Scroll, other window</cmd-desc>
+          <key-sequence>C-M-v</key-sequence>
+        </cmd>
+        <cmd>
+          <cmd-desc>Switch to other window</cmd-desc>
+          <key-sequence>C-x o</key-sequence>
+          <key-sequence>C-x 5 o</key-sequence>
+        </cmd>
+        <cmd>
+          <cmd-desc>Select Buf, other window</cmd-desc>
+          <key-sequence>C-x 4 b</key-sequence>
+          <key-sequence>C-x 5 b</key-sequence>
+        </cmd>
+        <cmd>
+          <cmd-desc>Display Buf, other window</cmd-desc>
+          <key-sequence>C-x 4 C-o</key-sequence>
+          <key-sequence>C-x 5 C-o</key-sequence>
+        </cmd>
+        <cmd>
+          <cmd-desc>Find file, other window</cmd-desc>
+          <key-sequence>C-x 4 f</key-sequence>
+          <key-sequence>C-x 5 f</key-sequence>
+        </cmd>
+        <cmd>
+          <cmd-desc>Dired, other window</cmd-desc>
+          <key-sequence>C-x 4 d</key-sequence>
+          <key-sequence>C-x 5 d</key-sequence>
+        </cmd>
+        <cmd>
+          <cmd-desc>Find tag, other window</cmd-desc>
+          <key-sequence>C-x 4 .</key-sequence>
+          <key-sequence>C-x 5 .</key-sequence>
+        </cmd>
+      </cmd-list>
+    </cmd-table>
+		
+    <cmd-table table-name="window-sizing" caption="Resize window" >
+	  <col-header></col-header>
+	  <col-header>smaller</col-header>
+	  <col-header>bigger</col-header>
+      <cmd-list>
+        <cmd>
+          <cmd-desc>Height</cmd-desc>
+          <key-sequence>C-x -</key-sequence>
+          <key-sequence>C-x ^</key-sequence>
+        </cmd>
+        <cmd>
+          <cmd-desc>Width</cmd-desc>
+          <key-sequence>C-x {</key-sequence>
+          <key-sequence>C-x }</key-sequence>
+        </cmd>
+     </cmd-list>
+    </cmd-table>
+  </cmd-family>
+
+  <!-- ==================================================== -->
+  <cmd-family cmd-family-name="Formatting" pkg="emacs">
+    <cmd-table table-name="main"  >
+      <cmd-list>
+        <cmd>
+          <cmd-desc>Join line with previous (with arg, next)</cmd-desc>
+          <key-sequence>M-^</key-sequence>
+        </cmd>
+        <cmd>
+          <cmd-desc>Split line</cmd-desc>
+          <key-sequence>C-j</key-sequence>
+        </cmd>
+        <cmd>
+          <cmd-desc>Insert newline after point</cmd-desc>
+          <key-sequence>C-o</key-sequence>
+        </cmd>
+        <cmd>
+          <cmd-desc>Move rest of line vertically down</cmd-desc>
+          <key-sequence>C-M-o</key-sequence>
+        </cmd>
+        <cmd>
+          <cmd-desc>Delete all white space around point</cmd-desc>
+          <key-sequence>M-\</key-sequence>
+        </cmd>
+        <cmd>
+          <cmd-desc>Put exactly one space at point</cmd-desc>
+          <key-sequence>M-SPC</key-sequence>
+        </cmd>
+        <cmd>
+          <cmd-desc>Delete blank lines around point</cmd-desc>
+          <key-sequence>C-x C-o</key-sequence>
+        </cmd>
+      </cmd-list>
+    </cmd-table>
+    <cmd-table table-name="indent" caption="indent" >
+      <cmd-list>
+        <cmd>
+          <cmd-desc>Indent current line (mode-dependent)</cmd-desc>
+          <key-sequence>TAB</key-sequence>
+        </cmd>
+        <cmd>
+          <cmd-desc>Indent region (mode-dependent)</cmd-desc>
+          <key-sequence>C-M-\</key-sequence>
+        </cmd>
+        <cmd>
+          <cmd-desc>Indent sexp (mode-dependent)</cmd-desc>
+          <key-sequence>C-M-q</key-sequence>
+        </cmd>
+        <cmd>
+          <cmd-desc>Indent region rigidly arg columns</cmd-desc>
+          <key-sequence>C-x TAB</key-sequence>
+        </cmd>        
+        <cmd>
+          <cmd-desc>Insert spaces up to next tab stop</cmd-desc>
+          <key-sequence>M-i</key-sequence>
+        </cmd>
+
+      </cmd-list>
+    </cmd-table>
+    <cmd-table table-name="fill" caption="fill" >
+      <cmd-list>
+        <cmd>
+          <cmd-desc>Fill paragraph</cmd-desc>
+          <key-sequence>M-q</key-sequence>
+        </cmd>
+        <cmd>
+          <cmd-desc>Set fill column</cmd-desc>
+          <key-sequence>C-x f</key-sequence>
+        </cmd>
+        <cmd>
+          <cmd-desc>Set fill prefix </cmd-desc>
+          <key-sequence>C-x .</key-sequence>
+        </cmd>
+        <cmd>
+          <cmd-desc>Comment region</cmd-desc>
+          <key-sequence>M-;</key-sequence>
+        </cmd>
+      </cmd-list>
+    </cmd-table>
+  </cmd-family>
+
+  <!-- ==================================================== -->
+  <cmd-family cmd-family-name="Case Change" pkg="emacs">
+    <cmd-table>
+      <cmd-list>
+        <cmd>
+          <cmd-desc>Uppercase word</cmd-desc>
+          <key-sequence>M-u</key-sequence>
+        </cmd>
+        <cmd>
+          <cmd-desc>Lowercase word</cmd-desc>
+          <key-sequence>M-l</key-sequence>
+        </cmd>
+        <cmd>
+          <cmd-desc>Capitalize word</cmd-desc>
+          <key-sequence>M-c</key-sequence>
+        </cmd>
+        <cmd>
+          <cmd-desc>Uppercase region</cmd-desc>
+          <key-sequence>C-x C-u</key-sequence>
+        </cmd>
+        <cmd>
+          <cmd-desc>Lowercase region</cmd-desc>
+          <key-sequence>C-x C-l</key-sequence>
+        </cmd>
+      </cmd-list>
+    </cmd-table>
+  </cmd-family>
+
+  <!-- ==================================================== -->
+  <cmd-family cmd-family-name="Minibuffer" pkg="emacs">
+    <cmd-table>
+      <cmd-list>
+        <cmd>
+          <cmd-desc>Complete (maximal)</cmd-desc>
+          <key-sequence>TAB</key-sequence>
+        </cmd>
+        <cmd>
+          <cmd-desc>Complete (1 word)</cmd-desc>
+          <key-sequence>SPC</key-sequence>
+        </cmd>
+        <cmd>
+          <cmd-desc>Complete and execute</cmd-desc>
+          <key-sequence>RET</key-sequence>
+        </cmd>
+        <cmd>
+          <cmd-desc>Show completions</cmd-desc>
+          <key-sequence>?</key-sequence>
+        </cmd>
+        <cmd>
+          <cmd-desc>Abort command</cmd-desc>
+          <key-sequence>C-g</key-sequence>
+        </cmd>
+        <cmd>
+          <cmd-desc>Repeat last command</cmd-desc>
+          <key-sequence>C-x ESC ESC or C-x M-:</key-sequence>
+        </cmd>
+      </cmd-list>
+    </cmd-table>
+	<cmd-table table-name="mini-buf-history" caption="MiniBuf History">
+      <col-header></col-header>
+      <col-header>backward</col-header>
+      <col-header>forward</col-header>
+      <cmd-list>
+        <cmd>
+          <cmd-desc>Cycle thru history</cmd-desc>
+          <key-sequence>M-p</key-sequence>
+          <key-sequence>M-n</key-sequence>
+        </cmd>
+        <cmd>
+          <cmd-desc>Regex search history</cmd-desc>
+          <key-sequence>M-r</key-sequence>
+          <key-sequence>M-s</key-sequence>
+        </cmd>
+	  </cmd-list>
+	</cmd-table>
+
+  </cmd-family>
+
+  <!-- ==================================================== -->
+  <cmd-family cmd-family-name="Buffers" pkg="emacs">
+    <cmd-table>
+      <cmd-list>
+        <cmd>
+          <cmd-desc>Select other buffer</cmd-desc>
+          <key-sequence>C-x b</key-sequence>
+        </cmd>
+        <cmd>
+          <cmd-desc>List all buffers</cmd-desc>
+          <key-sequence>C-x C-b</key-sequence>
+        </cmd>
+        <cmd>
+          <cmd-desc>Close a buffer</cmd-desc>
+          <key-sequence>C-x k</key-sequence>
+        </cmd>
+      </cmd-list>
+    </cmd-table>
+  </cmd-family>
+
+  <!-- ==================================================== -->
+  <cmd-family cmd-family-name="Transposing" pkg="emacs">
+    <cmd-table>
+      <cmd-list>
+        <cmd>
+          <cmd-desc>Transpose characters</cmd-desc>
+          <key-sequence>C-t</key-sequence>
+        </cmd>
+        <cmd>
+          <cmd-desc>Transpose words</cmd-desc>
+          <key-sequence>M-t</key-sequence>
+        </cmd>
+        <cmd>
+          <cmd-desc>Transpose lines</cmd-desc>
+          <key-sequence>C-x C-t</key-sequence>
+        </cmd>
+        <cmd>
+          <cmd-desc>Transpose sexps</cmd-desc>
+          <key-sequence>C-M-t</key-sequence>
+        </cmd>
+      </cmd-list>
+    </cmd-table>
+  </cmd-family>
+
+  <!-- ==================================================== -->
+  <cmd-family cmd-family-name="Spelling Check" pkg="emacs">
+    <cmd-table>
+      <cmd-list>
+        <cmd>
+          <cmd-desc>Check spelling of current word</cmd-desc>
+          <key-sequence>M-$</key-sequence>
+        </cmd>
+        <cmd>
+          <cmd-desc>Check spelling of all words in region</cmd-desc>
+          <key-sequence>M-x ispell-region</key-sequence>
+        </cmd>
+        <cmd>
+          <cmd-desc>Check spelling of entire buffer</cmd-desc>
+          <key-sequence>M-x ispell-buffer</key-sequence>
+        </cmd>
+      </cmd-list>
+    </cmd-table>
+  </cmd-family>
+
+  <!-- ==================================================== -->
+  <cmd-family cmd-family-name="Tags" pkg="emacs">
+    <cmd-table>
+      <cmd-list>
+        <cmd>
+          <cmd-desc>Find a tag definition</cmd-desc>
+          <key-sequence>M-.</key-sequence>
+        </cmd>
+        <cmd>
+          <cmd-desc>Find next occurrence</cmd-desc>
+          <key-sequence>C-u M-.</key-sequence>
+        </cmd>
+        <cmd>
+          <cmd-desc>Load tags file</cmd-desc>
+          <key-sequence>M-x visit-tags-table</key-sequence>
+        </cmd>
+        <cmd>
+          <cmd-desc>Regex search, all files</cmd-desc>
+          <key-sequence>M-x tags-search</key-sequence>
+        </cmd>
+        <cmd>
+          <cmd-desc>Query-replace, all files</cmd-desc>
+          <key-sequence>M-x tags-query-replace</key-sequence>
+        </cmd>
+        <cmd>
+          <cmd-desc>Continue previous search/query-replace</cmd-desc>
+          <key-sequence>M-,</key-sequence>
+        </cmd>
+        <cmd>
+          <cmd-desc>Return to start point</cmd-desc>
+          <key-sequence>M-*</key-sequence>
+        </cmd>
+      </cmd-list>
+    </cmd-table>
+  </cmd-family>
+
+  <!-- ==================================================== -->
+  <cmd-family cmd-family-name="Shells" pkg="emacs">
+    <cmd-table>
+      <cmd-list>
+        <cmd>
+          <cmd-desc>Execute shell cmd</cmd-desc>
+          <key-sequence>M-!</key-sequence>
+        </cmd>
+        <cmd>
+          <cmd-desc>Execute a shell cmd, output into buf</cmd-desc>
+          <key-sequence>C-u M-!</key-sequence>
+        </cmd>
+        <cmd>
+          <cmd-desc>Run a shell command on the region</cmd-desc>
+          <key-sequence>M-|</key-sequence>
+        </cmd>
+        <cmd>
+          <cmd-desc>Filter region through a shell command</cmd-desc>
+          <key-sequence>C-u M-|</key-sequence>
+        </cmd>
+        <cmd>
+          <cmd-desc>Open a shell window</cmd-desc>
+          <key-sequence>M-x shell</key-sequence>
+        </cmd>
+      </cmd-list>
+    </cmd-table>
+  </cmd-family>
+
+
+  <!-- ==================================================== -->
+  <cmd-family cmd-family-name="Abbrevs" pkg="emacs">
+    <cmd-table>
+      <cmd-list>
+        <cmd>
+          <cmd-desc>Expand preceding word dynamically</cmd-desc>
+          <key-sequence>M-/</key-sequence>
+        </cmd>
+      </cmd-list>
+    </cmd-table>
+    <cmd-table>
+      <cmd-list>
+        <cmd>
+          <cmd-desc>Add global abbrev</cmd-desc>
+          <key-sequence>C-x a g</key-sequence>
+        </cmd>
+        <cmd>
+          <cmd-desc>Add mode-local abbrev</cmd-desc>
+          <key-sequence>C-x a l</key-sequence>
+        </cmd>
+        <cmd>
+          <cmd-desc>Add global expansion for this abbrev</cmd-desc>
+          <key-sequence>C-x a i g</key-sequence>
+        </cmd>
+        <cmd>
+          <cmd-desc>Add mode-local expansion for this abbrev</cmd-desc>
+          <key-sequence>C-x a i l</key-sequence>
+        </cmd>
+        <cmd>
+          <cmd-desc>Explicitly expand abbrev</cmd-desc>
+          <key-sequence>C-x a e</key-sequence>
+        </cmd>
+      </cmd-list>
+    </cmd-table>
+  </cmd-family>
+
+  <!-- ==================================================== -->
+  <cmd-family cmd-family-name="Regular Expressions" pkg="emacs">
+    <cmd-table table-name="regex-main">
+      <cmd-list>
+        <cmd>
+          <cmd-desc>Any single character except a newline</cmd-desc>
+          <key-sequence>. (dot)</key-sequence>
+        </cmd>
+        <cmd>
+          <cmd-desc>Zero or more repeats</cmd-desc>
+          <key-sequence>*</key-sequence>
+        </cmd>
+        <cmd>
+          <cmd-desc>One or more repeats</cmd-desc>
+          <key-sequence>+</key-sequence>
+        </cmd>
+        <cmd>
+          <cmd-desc>Zero or one repeat</cmd-desc>
+          <key-sequence>?</key-sequence>
+        </cmd>
+        <cmd>
+          <cmd-desc>Quote RegEx special character</cmd-desc>
+          <key-sequence>\c</key-sequence>
+        </cmd>
+        <cmd>
+          <cmd-desc>Alternative ("or")</cmd-desc>
+          <key-sequence>\|</key-sequence>
+        </cmd>
+        <cmd>
+          <cmd-desc>Grouping</cmd-desc>
+          <key-sequence>\( ... \)</key-sequence>
+        </cmd>
+        <cmd>
+          <cmd-desc>Same text as nth group</cmd-desc>
+          <key-sequence>\n</key-sequence>
+        </cmd>
+        <cmd>
+          <cmd-desc>At word break</cmd-desc>
+          <key-sequence>\b</key-sequence>
+        </cmd>
+        <cmd>
+          <cmd-desc>Not at word break</cmd-desc>
+          <key-sequence>\B</key-sequence>
+        </cmd>
+      </cmd-list>
+    </cmd-table>
+    <cmd-table  table-name="regex-cont">
+      <col-header>entity</col-header>
+      <col-header>match start</col-header>
+      <col-header>match end</col-header>
+      <cmd-list>
+        <cmd>
+          <cmd-desc>Line</cmd-desc>
+          <key-sequence>^</key-sequence>
+          <key-sequence>$</key-sequence>
+        </cmd>
+        <cmd>
+          <cmd-desc>Word</cmd-desc>
+          <key-sequence>\&lt;</key-sequence>
+          <key-sequence>\&gt;</key-sequence>
+        </cmd>
+        <cmd>
+          <cmd-desc>Buffer</cmd-desc>
+          <key-sequence>\`</key-sequence>
+          <key-sequence>\'</key-sequence>
+        </cmd>
+      </cmd-list>
+    </cmd-table>
+    <cmd-table table-name="regex-char-class" >
+      <col-header>char class</col-header>
+      <col-header>match these</col-header>
+      <col-header>match others</col-header>
+      <cmd-list>
+        <cmd>
+          <cmd-desc>Explicit set</cmd-desc>
+          <key-sequence>[ ... ]</key-sequence>
+          <key-sequence>[^ ... ]</key-sequence>
+        </cmd>
+        <cmd>
+          <cmd-desc>Word-syntax character</cmd-desc>
+          <key-sequence>\w</key-sequence>
+          <key-sequence>\W</key-sequence>
+        </cmd>
+        <cmd>
+          <cmd-desc>Character with syntax c</cmd-desc>
+          <key-sequence>\sc</key-sequence>
+          <key-sequence>\Sc</key-sequence>
+        </cmd>
+      </cmd-list>
+    </cmd-table>
+  </cmd-family>
+
+  <!-- ==================================================== -->
+  <cmd-family cmd-family-name="International Character Sets" pkg="emacs">
+    <cmd-table>
+      <cmd-list>
+        <cmd>
+          <cmd-desc>Specify principal language</cmd-desc>
+          <key-sequence>C-x RET l</key-sequence>
+        </cmd>
+        <cmd>
+          <cmd-desc>Show all input methods</cmd-desc>
+          <key-sequence>M-x list-input-methods</key-sequence>
+        </cmd>
+        <cmd>
+          <cmd-desc>Enable or disable input method</cmd-desc>
+          <key-sequence>C-\</key-sequence>
+        </cmd>
+        <cmd>
+          <cmd-desc>Set coding system for next command</cmd-desc>
+          <key-sequence>C-x RET c</key-sequence>
+        </cmd>
+        <cmd>
+          <cmd-desc>Show all coding systems</cmd-desc>
+          <key-sequence>M-x list-coding-systems</key-sequence>
+        </cmd>
+        <cmd>
+          <cmd-desc>Choose preferred coding system</cmd-desc>
+          <key-sequence>M-x prefer-coding-system</key-sequence>
+        </cmd>
+      </cmd-list>
+    </cmd-table>
+  </cmd-family>
+
+  <!-- ==================================================== -->
+  <cmd-family cmd-family-name="Help" pkg="emacs">
+    <cmd-table>
+      <cmd-list>
+        <cmd>
+          <cmd-desc>Remove help window</cmd-desc>
+          <key-sequence>C-x 1</key-sequence>
+        </cmd>
+        <cmd>
+          <cmd-desc>Scroll help window</cmd-desc>
+          <key-sequence>C-M-v</key-sequence>
+        </cmd>
+        <cmd>
+          <cmd-desc>Apropos: show commands matching a string</cmd-desc>
+          <key-sequence>C-h a</key-sequence>
+        </cmd>
+        <cmd>
+          <cmd-desc>Describe the function a key runs</cmd-desc>
+          <key-sequence>C-h k</key-sequence>
+        </cmd>
+        <cmd>
+          <cmd-desc>Describe a function</cmd-desc>
+          <key-sequence>C-h f</key-sequence>
+        </cmd>
+        <cmd>
+          <cmd-desc>Get mode-specific information</cmd-desc>
+          <key-sequence>C-h m</key-sequence>
+        </cmd>
+      </cmd-list>
+    </cmd-table>
+  </cmd-family>
+
+  <!-- ==================================================== -->
+  <cmd-family cmd-family-name="Info" pkg="emacs">
+    <cmd-table>
+      <cmd-list>
+        <cmd>
+          <cmd-desc>Enter the Info documentation reader</cmd-desc>
+          <key-sequence>C-h i</key-sequence>
+        </cmd>
+        <cmd>
+          <cmd-desc>Find specified function or variable in Info</cmd-desc>
+          <key-sequence>C-h S</key-sequence>
+        </cmd>
+      </cmd-list>
+    </cmd-table>
+	
+    <cmd-table table-name="in-help-mode" caption="moving in a help node">
+      <cmd-list>
+        <cmd>
+          <cmd-desc>Scroll forward</cmd-desc>
+          <key-sequence>SPC</key-sequence>
+        </cmd>
+        <cmd>
+          <cmd-desc>Scroll reverse</cmd-desc>
+          <key-sequence>DEL</key-sequence>
+        </cmd>
+        <cmd>
+          <cmd-desc>Beginning of node</cmd-desc>
+          <key-sequence>. (dot)</key-sequence>
+        </cmd>
+      </cmd-list>
+    </cmd-table>
+
+    <cmd-table table-name="between-help-mode" caption="moving between  help nodes">
+      <cmd-list>
+        <cmd>
+          <cmd-desc>Next node</cmd-desc>
+          <key-sequence>n</key-sequence>
+        </cmd>
+        <cmd>
+          <cmd-desc>Previous node</cmd-desc>
+		  <key-sequence>p</key-sequence>
+		</cmd>
+		<cmd>
+		  <cmd-desc>Move up</cmd-desc>
+		  <key-sequence>u</key-sequence>
+		</cmd>
+		<cmd>
+		  <cmd-desc>Select menu item by name</cmd-desc>
+		  <key-sequence>m</key-sequence>
+		</cmd>
+		<cmd>
+		  <cmd-desc>Select nth menu item by number (1-9)</cmd-desc>
+		  <key-sequence>n</key-sequence>
+		</cmd>
+		<cmd>
+		  <cmd-desc>Follow cross reference (return with l)</cmd-desc>
+		  <key-sequence>f</key-sequence>
+		</cmd>
+		<cmd>
+		  <cmd-desc>Return to last node you saw</cmd-desc>
+		  <key-sequence>l</key-sequence>
+		</cmd>
+		<cmd>
+		  <cmd-desc>Return to directory node</cmd-desc>
+		  <key-sequence>d</key-sequence>
+		</cmd>
+		<cmd>
+		  <cmd-desc>Go to top node of Info file</cmd-desc>
+		  <key-sequence>t
+		  </key-sequence>
+		</cmd>
+		<cmd>
+		  <cmd-desc>Go to any node by name</cmd-desc>
+		  <key-sequence>g</key-sequence>
+		</cmd>
+	  </cmd-list>
+	</cmd-table>
+	<cmd-table table-name="misc-help-mode" caption="misc help">
+	  <cmd-list>
+		<cmd>
+		  <cmd-desc>Run Info tutorial</cmd-desc>
+		  <key-sequence>h</key-sequence>
+		</cmd>
+		<cmd>
+		  <cmd-desc>Quit Info</cmd-desc>
+		  <key-sequence>q</key-sequence>
+		</cmd>
+		<cmd>
+		  <cmd-desc>Search nodes for RegEx</cmd-desc>
+		  <key-sequence>M-s</key-sequence>
+		</cmd>
+	  </cmd-list>
+	</cmd-table>
+  </cmd-family>
+
+  <!-- ==================================================== -->
+  <cmd-family cmd-family-name="Registers" pkg="emacs">
+	<cmd-table>
+	  <col-header></col-header>
+	  <col-header>Into reg</col-header>
+	  <col-header>From reg</col-header>
+	  <cmd-list>
+		<cmd>
+		  <cmd-desc>Region contents</cmd-desc>
+		  <key-sequence>C-x r s</key-sequence>
+		  <key-sequence>C-x r i</key-sequence>
+		</cmd>
+		<cmd>
+		  <cmd-desc>Point location</cmd-desc>
+		  <key-sequence>C-x r SPC</key-sequence>
+		  <key-sequence>C-x r j</key-sequence>
+		</cmd>
+		<cmd>
+		  <cmd-desc>Point location - bookmark</cmd-desc>
+		  <key-sequence>C-x r m</key-sequence>
+		  <key-sequence>C-x r b</key-sequence>
+		</cmd>
+		<cmd>
+		  <cmd-desc>Show bookmarks</cmd-desc>
+		  <key-sequence></key-sequence>
+		  <key-sequence>C-x r l</key-sequence>
+		</cmd>
+	  </cmd-list>
+	</cmd-table>
+  </cmd-family>
+
+  <!-- ==================================================== -->
+  <cmd-family cmd-family-name="Rectangles" pkg="emacs">
+    <cmd-table>
+      <cmd-list>
+        <cmd>
+          <cmd-desc>Copy rectangle to register</cmd-desc>
+          <key-sequence>C-x r r</key-sequence>
+        </cmd>
+        <cmd>
+          <cmd-desc>Copy rectangle to kill ring</cmd-desc>
+          <key-sequence>C-x r M-w</key-sequence>
+        </cmd>
+        <cmd>
+          <cmd-desc>Kill rectangle</cmd-desc>
+          <key-sequence>C-x r k</key-sequence>
+        </cmd>
+        <cmd>
+          <cmd-desc>Yank rectangle</cmd-desc>
+          <key-sequence>C-x r y</key-sequence>
+        </cmd>
+        <cmd>
+          <cmd-desc>Open rectangle, shifting text right</cmd-desc>
+          <key-sequence>C-x r o</key-sequence>
+        </cmd>
+        <cmd>
+          <cmd-desc>Blank out rectangle</cmd-desc>
+          <key-sequence>C-x r c</key-sequence>
+        </cmd>
+        <cmd>
+          <cmd-desc>Prefix each line with a string</cmd-desc>
+          <key-sequence>C-x r t</key-sequence>
+        </cmd>
+        <cmd>
+          <cmd-desc>Insert incrementing numbers</cmd-desc>
+          <key-sequence>[C-u #]C-x r N</key-sequence>
+        </cmd>
+      </cmd-list>
+    </cmd-table>
+  </cmd-family>
+
+  <!-- ==================================================== -->
+  <cmd-family cmd-family-name="Keyboard Macros" pkg="emacs">
+	<cmd-table>
+	  <cmd-list>
+		<cmd>
+		  <cmd-desc>Start recording</cmd-desc>
+		  <key-sequence>C-x ( or F3</key-sequence>
+		</cmd>
+		<cmd>
+		  <cmd-desc>Stop recording</cmd-desc>
+		  <key-sequence>C-x ) or F4</key-sequence>
+		</cmd>
+		<cmd>
+		  <cmd-desc>Execute last macro</cmd-desc>
+		  <key-sequence>C-x e or F4</key-sequence>
+		</cmd>
+		<cmd>
+		  <cmd-desc>Append to last keyboard macro</cmd-desc>
+		  <key-sequence>C-u C-x (</key-sequence>
+		</cmd>
+		<cmd>
+		  <cmd-desc>Name last keyboard macro</cmd-desc>
+		  <key-sequence>M-x name-last-kbd-macro</key-sequence>
+		</cmd>
+		<cmd>
+		  <cmd-desc>Insert Lisp definition in buffer</cmd-desc>
+		  <key-sequence>M-x insert-kbd-macro</key-sequence>
+		</cmd>
+	  </cmd-list>
+	</cmd-table>
+  </cmd-family>
+
+  <!-- ==================================================== -->
+  <cmd-family cmd-family-name="ELisp" pkg="emacs">
+	<cmd-table>
+	  <cmd-list>
+		<cmd>
+		  <cmd-desc>Eval sexp before point</cmd-desc>
+		  <key-sequence>C-x C-e</key-sequence>
+		</cmd>
+		<cmd>
+		  <cmd-desc>Eval current defun</cmd-desc>
+		  <key-sequence>C-M-x</key-sequence>
+		</cmd>
+		<cmd>
+		  <cmd-desc>Eval region</cmd-desc>
+		  <key-sequence>M-x eval-region</key-sequence>
+		  </cmd>
+		<cmd>
+		  <cmd-desc>Read and eval minibuffer</cmd-desc>
+		  <key-sequence>M-:</key-sequence>
+		</cmd>
+		<cmd>
+		  <cmd-desc>Load from std SysDir</cmd-desc>
+		  <key-sequence>M-x load-library</key-sequence>
+		</cmd>
+	  </cmd-list>
+	</cmd-table>
+  </cmd-family>
+
+  <!-- ==================================================== -->
+  <cmd-family cmd-family-name="Mozrepl" pkg="mozrepl">
+	<cmd-table>
+	  <cmd-list>
+		<cmd>
+		  <cmd-desc>Open mozrepl buffer</cmd-desc>
+		  <key-sequence>C-c C-s</key-sequence>
+		</cmd>
+		<cmd>
+		  <cmd-desc>Load buf in mozrepl</cmd-desc>
+		  <key-sequence>C-c C-l</key-sequence>
+		</cmd>
+		<cmd>
+		  <cmd-desc>Send cur function</cmd-desc>
+		  <key-sequence>C-M-x</key-sequence>
+		</cmd>
+		<cmd>
+		  <cmd-desc>Send cur func, switch to mozrepl buf</cmd-desc>
+		  <key-sequence>C-c C-c</key-sequence>
+		</cmd>
+		<cmd>
+		  <cmd-desc>Send cur region to mozrepl</cmd-desc>
+		  <key-sequence></key-sequence>
+		</cmd>
+	  </cmd-list>
+	</cmd-table>
+  </cmd-family>
+
+  <!-- ==================================================== -->
+  <cmd-family cmd-family-name="nXml" pkg="nXml">
+	<cmd-table table-name="tags" caption="Tags">
+      <cmd-list>
+        <cmd>
+          <cmd-desc>Finish current element</cmd-desc>
+          <key-sequence>C-c C-f</key-sequence>
+        </cmd>
+        <cmd>
+          <cmd-desc>Finish tag &amp; end tag, same line</cmd-desc>
+          <key-sequence>C-c TAB</key-sequence>
+        </cmd>
+        <cmd>
+          <cmd-desc>Finish tag &amp; end tag, next line</cmd-desc>
+          <key-sequence>C-c C-b</key-sequence>
+        </cmd>
+        <cmd>
+          <cmd-desc>Completion</cmd-desc>
+          <key-sequence>C-ENTER</key-sequence>
+        </cmd>
+        <cmd>
+          <cmd-desc>Move up</cmd-desc>
+          <key-sequence>C-M-u</key-sequence>
+        </cmd>
+        <cmd>
+          <cmd-desc>Move down</cmd-desc>
+          <key-sequence>C-M-d</key-sequence>
+        </cmd>
+        <cmd>
+          <cmd-desc>Elements behave as sexps!</cmd-desc>
+          <key-sequence></key-sequence>
+        </cmd>
+	  </cmd-list>
+	</cmd-table>
+  </cmd-family>
+  
+  <!-- ==================================================== -->
+  <cmd-family cmd-family-name="Xslt" pkg="xslt-process">
+	<cmd-table>
+      <cmd-list>
+        <cmd>
+          <cmd-desc>Process, view in buf</cmd-desc>
+          <key-sequence>C-c C-x v</key-sequence>
+        </cmd>
+        <cmd>
+          <cmd-desc></cmd-desc>
+          <key-sequence></key-sequence>
+        </cmd>
+        <cmd>
+          <cmd-desc></cmd-desc>
+          <key-sequence></key-sequence>
+        </cmd>
+        <cmd>
+          <cmd-desc></cmd-desc>
+          <key-sequence></key-sequence>
+        </cmd>
+		<cmd>
+          <cmd-desc></cmd-desc>
+          <key-sequence></key-sequence>
+        </cmd>
+	  </cmd-list>
+	</cmd-table>
+  </cmd-family>
+  
+  <!-- ==================================================== -->
+  <cmd-family cmd-family-name="My .emacs" pkg="init.el">
+	<cmd-table>
+      <cmd-list>
+        <cmd>
+          <cmd-desc>Delete all blank lines buf|region</cmd-desc>
+          <key-sequence>M-x dbl</key-sequence>
+        </cmd>
+        <cmd>
+          <cmd-desc>Do xslt process</cmd-desc>
+          <key-sequence>M-x xp</key-sequence>
+        </cmd>
+        <cmd>
+          <cmd-desc>Do xslt post proc</cmd-desc>
+          <key-sequence>M-x pp</key-sequence>
+        </cmd>
+		<cmd>
+          <cmd-desc>Set xslt post proc func</cmd-desc>
+          <key-sequence>M-x setpp</key-sequence>
+        </cmd>
+		<cmd>
+          <cmd-desc>indent whole buffer</cmd-desc>
+          <key-sequence>M-x iwb</key-sequence>
+        </cmd>
+		<cmd>
+          <cmd-desc>Dedicate window</cmd-desc>
+          <key-sequence>PAUSE</key-sequence>
+        </cmd>
+		<cmd>
+          <cmd-desc>grep-find</cmd-desc>
+          <key-sequence>M-x gf</key-sequence>
+        </cmd>
+	  </cmd-list>
+	</cmd-table>
+	<cmd-table table-name="to-window" caption="Move to window">
+	  <col-header></col-header>
+	  <col-header>backward</col-header>
+	  <col-header>forward</col-header>	  
+      <cmd-list>
+        <cmd>
+          <cmd-desc>vertical</cmd-desc>
+          <key-sequence>C-c w</key-sequence>
+          <key-sequence>C-c s</key-sequence>
+        </cmd>
+        <cmd>
+          <cmd-desc>horizontal</cmd-desc>
+          <key-sequence>C-c a</key-sequence>
+          <key-sequence>C-c d</key-sequence>
+        </cmd>
+	  </cmd-list>
+	</cmd-table>
+  </cmd-family>
+  
+  <!-- ==================================================== -->
+  <cmd-family cmd-family-name="Junkyard" pkg="emacs">
+    <cmd-table>
+      <cmd-list>
+        <cmd>
+          <cmd-desc>Set face</cmd-desc>
+          <key-sequence>M-o</key-sequence>
+        </cmd>
+        <cmd>
+          <cmd-desc></cmd-desc>
+          <key-sequence>M-x list-command-history</key-sequence>
+        </cmd>
+        <cmd>
+          <cmd-desc></cmd-desc>
+          <key-sequence>M-x delete-trailing-whitespace</key-sequence>
+        </cmd>
+        <cmd>
+          <cmd-desc></cmd-desc>
+          <key-sequence>M-x remove-blank-lines</key-sequence>
+        </cmd>
+        <cmd>
+          <cmd-desc>Select in delimiters</cmd-desc>
+          <key-sequence>M-"</key-sequence>
+        </cmd>
+        <cmd>
+          <cmd-desc></cmd-desc>
+          <key-sequence>Insert Date</key-sequence>
+        </cmd>
+        <cmd>
+          <cmd-desc></cmd-desc>
+          <key-sequence>Insert Time</key-sequence>
+        </cmd>
+		<cmd>
+		  <cmd-desc></cmd-desc>
+		  <key-sequence></key-sequence>
+		</cmd>
+      </cmd-list>
+    </cmd-table>
+
+	<cmd-table>
+	  <cmd-list>
+	  </cmd-list>
+	</cmd-table>
+  </cmd-family>
+  
+</ecs>

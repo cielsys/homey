@@ -95,6 +95,9 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
+# Shorten the shell prompt to only 3 dirs back/deep
+export PROMPT_DIRTRIM=3
+
 # Online suggestion to deal with "Couldn't connect to accessibility bus" 
 # error messeage when lauching emacs and other programs
 export NO_AT_BRIDGE=1
@@ -106,66 +109,24 @@ export NO_AT_BRIDGE=1
 # export SVGA_VGPU10=0
 
 #export PATH=/opt/tools/arm-bcm2708/gcc-linaro-arm-linux-gnueabihf-raspbian/bin:$PATH
-export PATH=/opt/tools/arm-bcm2708/gcc-linaro-arm-linux-gnueabihf-raspbian-x64/bin:$PATH
+#export PATH=/opt/tools/arm-bcm2708/gcc-linaro-arm-linux-gnueabihf-raspbian-x64/bin:$PATH
 
 # This is for use in mint because package repos aren't
 # defined. Not sure how this would affect  actual ubuntu
 # or other OSes
-export ROS_OS_OVERRIDE=ubuntu:16.04:xenial
+#export ROS_OS_OVERRIDE=ubuntu:16.04:xenial
 
 # added by Miniconda3 installer Comment out while using ros
 #export PATH="/home/cl/apps/miniconda/bin:$PATH"
-
-while true
-do
-
-# Allow for ROS source choice
-read -p "Do you want to source ROS in this workspace (y/n): " input_choice
-
-if [ "$input_choice" = "y" ]
-then
-  echo "Sourcing ROS..."
-  # Source ROS
-  source /opt/ros/kinetic/setup.bash
-  #export ROS_IP=`echo $(hostname -I)` 
-  export ROS_IP=192.168.1.19
-  
-  # RoboND Proj2
-  #export CATKIN_WS=$HOME/AAAProjects/AAAUdacity/roboND/Proj2_RosPickPlace/catkin_ws 
-  #export GAZEBO_MODEL_PATH=$CATKIN_WS/src/RoboND-Kinematics-Project/kuka_arm/models
-
-  # RoboND Proj3 Exer1,2
-  #export CATKIN_WS=$HOME/AAAProjects/AAAUdacity/roboND/Proj3_3dPerception/RoboND-Perception-Exercises/catkin_ws
-  #export GAZEBO_MODEL_PATH=$CATKIN_WS/src/sensor_stick/models
-
-  # RoboND Proj3 Exer3
-  #export CATKIN_WS=$HOME/AAAProjects/AAAUdacity/roboND/Proj3_3dPerception/RoboND-Perception-Exercises/catkin_ws3
-  #export GAZEBO_MODEL_PATH=~$CATKIN_WS/src/sensor_stick/models
-
-  # RoboND Proj3 
-  export CATKIN_WS=$HOME/AAAProjects/AAAUdacity/roboND/Proj3_3dPerception/Proj3_Root/catkin_ws
-  export GAZEBO_MODEL_PATH=$CATKIN_WS/src/RoboND-Perception-Project/pr2_robot/models
-
-  source $CATKIN_WS/devel/setup.bash
-  echo "ROS sourced." 
-  echo "        CATKIN_WS = $CATKIN_WS"
-  echo "GAZEBO_MODEL_PATH = $GAZEBO_MODEL_PATH"
-
-  break
-elif [ "$input_choice" = "n" ]
-then
-  echo "ROS *NOT* sourced"
-  # Setup conda
-  export PATH="/home/cl/apps/anaconda3/bin:$PATH"
-  break
-else
-  echo "Warning: Not an acceptable option. Choose (y/n). "
-fi
-
-done
 
 
 if [ -f ~/.bash_aliases ]; then
     source ~/.bash_aliases
 fi
+
+#export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/cuda/extras/CUPTI/lib64
+#export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/cuda/lib64
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/cuda-10.1/lib64
+export PATH="/usr/local/cuda-10.1/bin:$PATH"
+
 

@@ -1,0 +1,25 @@
+Ctrl+, - find thing in solution (file, symbol, whatever)
+
+F12 - go to definition of thing at cursor
+
+Ctrl+F3 - find next occurrence of word under cursor
+
+If you mouse left-handed, add additional bindings to cut/copy/paste. I like to use numpad keys: * for paste, - for cut, + for copy
+
+Ctrl+W - select word under cursor. Can be quicker than double clicking
+
+Ctrl+} - jump cursor to matching { or }. Think this works for #if...#endif too
+
+Ctrl+K, Ctrl+D - reformat entire document
+
+Ctrl+K, Ctrl+C; Ctrl+K, Ctrl+U - comment/uncomment selection
+
+Ctrl+I - isearch-style incremental search. I never got on with this but some people like it
+
+Shift+Alt+cursors - box selection. A 0-width box selection means multiple cursors. Unlike emacs, you can copy/cut/paste box selections using the normal keys; if it was copied as a box, it pastes as a box
+
+Esc - move focus back to text editor
+
+Shift+Esc - dismiss tool window that has focus and move focus back to text editor
+
+f4 or f8 (the default shortcut seems to vary) - navigate through build errors or find-in-file results (use shift+<key> to navigate backwards)

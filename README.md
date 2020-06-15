@@ -30,9 +30,9 @@ Backup or delete the exisiting home files
 Create ~ symbolic links to the repo version
 
     cd ~
-    ln -s ~/homey/bashrc .bashrc
-    ln -s ~/homey/bash_aliases .bmxash_aliases
-    ln -s ~/homey/bash_emacs .bash_emacs
+    ln -s ~/homey/.bashrc .bashrc
+    ln -s ~/homey/.bash_aliases .bash_aliases
+    ln -s ~/homey/.bash_emacs .bash_emacs
 
     ln -s ~/homey/.emacs.d .emacs.d
     ln -s ~/homey/bin bin

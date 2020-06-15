@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="tables1out.xsl"?>
+<tables-container>
+  <list>
+    <record-def>
+      <name>Cutting and Pasting</name>
+    </record-def>
+    <contents>
+      <item>
+        <record-def>
+          <name>Mark one end of region</name>
+          <field type="key-sequence">C-SPC</field>
+        </record-def>
+      </item>
+      <item>
+        <record-def>
+          <name>Cut (after you Mark and move to other end)</name>
+          <field type="key-sequence">C-w</field>
+        </record-def>
+      </item>
+      <item>
+        <record-def>
+          <name>Copy (after you Mark and move to other end)</name>
+          <field type="key-sequence">M-w</field>
+        </record-def>
+      </item>
+      <item>
+        <record-def>
+          <name>Yank (paste) most recently killed (cut or copied); will also use text currently selected in another application.</name>
+          <field type="key-sequence">C-y</field>
+        </record-def>
+      </item>
+      <item>
+        <record-def>
+          <name>Next most recently killed (do C-yfirst, repeat M-yto cycle thru all)</name>
+          <field type="key-sequence">M-y</field>
+        </record-def>
+      </item>
+    </contents>
+  </list>
+  <list>
+    <record-def>
+      <name>Scrolling and Windows</name>
+    </record-def>
+    <contents>
+      <item>
+        <record-def>
+          <name>Scroll down (toward end of buffer)</name>
+          <field type="key-sequence">C-v</field>
+        </record-def>
+      </item>
+      <item>
+        <record-def>
+          <name>Scroll up (toward beginning of buffer)</name>
+          <field type="key-sequence">M-v</field>
+        </record-def>
+      </item>
+      <item>
+        <record-def>
+          <name>Scroll other window down</name>
+          <field type="key-sequence">C-M-v</field>
+        </record-def>
+      </item>
+      <item>
+        <record-def>
+          <name>One window on current buffer</name>
+          <field type="key-sequence">C-x 1</field>
+        </record-def>
+      </item>
+      <item>
+        <record-def>
+          <name>Split window vertically</name>
+          <field type="key-sequence">C-x 2</field>
+        </record-def>
+      </item>
+      <item>
+        <record-def>
+          <name>Split window horizontally</name>
+          <field type="key-sequence">C-x 3</field>
+        </record-def>
+      </item>
+      <item>
+        <record-def>
+          <name>Grow window vertically; prefix is number of lines</name>
+          <field type="key-sequence">C-x ^</field>
+        </record-def>
+      </item>
+    </contents>
+  </list>
+  <list>
+    <record-def>
+      <name>Command-related Stuff</name>
+    </record-def>
+    <contents>
+      <item>
+        <record-def>
+          <name>Get me out of where I am now</name>
+          <field type="key-sequence">ESC ESC ESC</field>
+        </record-def>
+      </item>
+      <item>
+        <record-def>
+          <name>Prefix numeric arg # (digits with optional
+          "-"sign) to next cmd</name>
+          <field type="key-sequence">C-u # </field>
+        </record-def>
+      </item>
+      <item>
+        <record-def>
+          <name>Stop a command in progress, or quit out of a partially entered command</name>
+          <field type="key-sequence">C-g</field>
+        </record-def>
+      </item>
+    </contents>
+  </list>
+  <list>
+    <record-def>
+      <name>Getting help</name>
+    </record-def>
+    <contents>
+      <item>
+        <record-def>
+          <name>Show command documentation; prompts for keystrokes</name>
+          <field type="key-sequence">C-h k</field>
+        </record-def>
+      </item>
+      <item>
+        <record-def>
+          <name>"Command apropos"; prompts for regexp and shows all matching commands</name>
+          <field type="key-sequence">C-h a</field>
+        </record-def>
+      </item>
+      <item>
+        <record-def>
+          <name>Show command name on message line; prompts for keystrokes</name>
+          <field type="key-sequence">C-h c</field>
+        </record-def>
+      </item>
+      <item>
+        <record-def>
+          <name>Describe function; prompts for command or function name, shows documentation in other window</name>
+          <field type="key-sequence">C-h f </field>
+        </record-def>
+      </item>
+      <item>
+        <record-def>
+          <name>Info browser; gives access to online documentation for emacs and more</name>
+          <field type="key-sequence">C-h i</field>
+        </record-def>
+      </item>
+    </contents>
+  </list>
+  <list>
+    <record-def>
+      <name>Miscellaneous</name>
+    </record-def>
+    <contents>
+      <item>
+        <record-def>
+          <name>Undo/redo (a series of these keeps undoing; after doing something else,  C-_or  C-x uwill undo the undo's)</name>
+          <field type="key-sequence">C-_ or C-x u</field>
+        </record-def>
+      </item>
+      <item>
+        <record-def>
+          <name>Quoted insert; inserts the next character typed, even if it is a control or meta character</name>
+          <field type="key-sequence">C-q</field>
+        </record-def>
+      </item>
+      <item>
+        <record-def>
+          <name>Flush ^M at end of line</name>
+          <field type="key-sequence">M-x shell-strip-ctrl-m RET</field>
+        </record-def>
+      </item>
+      <item>
+        <record-def>
+          <name>Suspend/iconify emacs (type "%emacs"in invoking shell to get it back)</name>
+          <field type="key-sequence">C-z</field>
+        </record-def>
+      </item>
+      <item>
+        <record-def>
+          <name>Exit emacs (asks about unsaved buffers and running programs)</name>
+          <field type="key-sequence">C-x C-c</field>
+        </record-def>
+      </item>
+    </contents>
+  </list>
+  <list>
+    <record-def>
+      <name>Files and Buffers</name>
+    </record-def>
+    <contents>
+      <item>
+        <record-def>
+          <name>Find file (or create if not there); prompts for file name</name>
+          <field type="key-sequence">C-x C-f</field>
+        </record-def>
+      </item>
+      <item>
+        <record-def>
+          <name>Save file</name>
+          <field type="key-sequence">C-x C-s</field>
+        </record-def>
+      </item>
+      <item>
+        <record-def>
+          <name>Write file; prompts for new name</name>
+          <field type="key-sequence">C-x C-w</field>
+        </record-def>
+      </item>
+      <item>
+        <record-def>
+          <name>Save modified buffers; asks about each</name>
+          <field type="key-sequence">C-x s</field>
+        </record-def>
+      </item>
+      <item>
+        <record-def>
+          <name>Select buffer; prompts for buffer name</name>
+          <field type="key-sequence">C-x b</field>
+        </record-def>
+      </item>
+      <item>
+        <record-def>
+          <name>List buffers; shows in other window</name>
+		  <field type="key-sequence">C-x C-b</field>
+		</record-def>
+	  </item>
+	</contents>
+  </list>
+  <list>
+	<record-def>
+	  <name>Searching/Replacing</name>
+	</record-def>
+	<contents>
+	  <item>
+		<record-def>
+		  <name>Incremental search forward; searches as you type</name>
+		  <field type="key-sequence">C-s</field>
+		</record-def>
+	  </item>
+	  <item>
+		<record-def>
+		  <name>Incremental search backward</name>
+		  <field type="key-sequence">C-r</field>
+		</record-def>
+	  </item>
+	  <item>
+		<record-def>
+		  <name>String replace from here to end of buffer; prompts for string and replacement</name>
+		  <field type="key-sequence">M-x replace-string RET</field>
+		</record-def>
+	  </item>
+	  <item>
+		<record-def>
+		  <name>String replace from here to end of buffer, querying for each occurrence</name>
+		  <field type="key-sequence">M-x query-replace RET</field>
+		</record-def>
+	  </item>
+	</contents>
+  </list>
+</tables-container>

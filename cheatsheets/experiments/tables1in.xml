@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="tables1in.xsl"?>
+
+<tables-container>
+  <table>
+    <tbody>
+      <tr>
+        <th colspan="2">
+          <font size="+2">Cutting and Pasting</font>
+        </th>
+      </tr>
+      <tr>
+        <td valign="top">
+          <tt>C-SPC</tt>
+        </td>
+        <td valign="top">Mark one end of region</td>
+      </tr>
+      <tr>
+        <td valign="top">
+          <tt>C-w</tt>
+        </td>
+        <td valign="top">Cut (after you Mark and move to other end)</td>
+      </tr>
+      <tr>
+        <td valign="top">
+          <tt>M-w</tt>
+        </td>
+        <td valign="top">Copy (after you Mark and move to other end)</td>
+      </tr>
+      <tr>
+        <td valign="top">
+          <tt>C-y</tt>
+        </td>
+        <td valign="top">Yank (paste) most recently killed (cut or copied); will also use text currently selected in another application.</td>
+      </tr>
+      <tr>
+        <td valign="top">
+          <tt>M-y</tt>
+        </td>
+        <td valign="top">Next most recently killed (do <tt>C-y</tt>first, repeat <tt>M-y</tt>to cycle thru all)</td>
+      </tr>
+    </tbody>
+  </table>
+  <!-- =========================== -->
+  <table>
+    <tbody>
+      <tr>
+        <th colspan="2">
+          <font size="+2">Scrolling and Windows</font>
+        </th>
+      </tr>
+      <tr>
+        <td valign="top">
+          <tt>C-v</tt>
+        </td>
+        <td valign="top">Scroll down (toward end of buffer)</td>
+      </tr>
+      <tr>
+        <td valign="top">
+          <tt>M-v</tt>
+        </td>
+        <td valign="top">Scroll up (toward beginning of buffer)</td>
+      </tr>
+      <tr>
+        <td valign="top">
+          <tt>C-M-v</tt>
+        </td>
+        <td valign="top">Scroll other window down</td>
+      </tr>
+      <tr>
+        <td valign="top">
+          <tt>C-x 1</tt>
+        </td>
+        <td valign="top">One window on current buffer</td>
+      </tr>
+      <tr>
+        <td valign="top">
+          <tt>C-x 2</tt>
+        </td>
+        <td valign="top">Split window vertically</td>
+      </tr>
+      <tr>
+        <td valign="top">
+          <tt>C-x 3</tt>
+        </td>
+        <td valign="top">Split window horizontally</td>
+      </tr>
+      <tr>
+        <td valign="top">
+          <tt>C-x ^</tt>
+        </td>
+        <td valign="top">Grow window vertically; prefix is number of lines</td>
+      </tr>
+    </tbody>
+  </table>
+  <table>
+    <tbody>
+      <tr>
+        <th colspan="2">
+          <font size="+2">Command-related Stuff</font>
+        </th>
+      </tr>
+      <tr>
+        <td valign="top">
+          <tt>ESC ESC ESC</tt>
+        </td>
+        <td valign="top">Get me out of where I am now</td>
+      </tr>
+      <tr>
+        <td valign="top">
+          <tt>C-u #</tt>
+        </td>
+        <td valign="top">Prefix numeric arg # (digits with optional 
+        <tt>"-"</tt>sign) to next cmd</td>
+      </tr>
+      <tr>
+        <td valign="top">
+          <tt>C-g</tt>
+        </td>
+        <td valign="top">Stop a command in progress, or quit out of a partially entered command</td>
+      </tr>
+    </tbody>
+  </table>
+  <table>
+    <tbody>
+      <tr>
+        <th colspan="2">
+          <font size="+2">Getting help</font>
+        </th>
+      </tr>
+      <tr>
+        <td valign="top">
+          <tt>C-h k</tt>
+        </td>
+        <td valign="top">Show command documentation; prompts for keystrokes</td>
+      </tr>
+      <tr>
+        <td valign="top">
+          <tt>C-h a</tt>
+        </td>
+        <td valign="top">"Command apropos"; prompts for regexp and shows all matching commands</td>
+      </tr>
+      <tr>
+        <td valign="top">
+          <tt>C-h c</tt>
+        </td>
+        <td valign="top">Show command name on message line; prompts for keystrokes</td>
+      </tr>
+      <tr>
+        <td valign="top">
+          <tt>C-h f</tt>
+        </td>
+        <td valign="top">Describe function; prompts for command or function name, shows documentation in other window</td>
+      </tr>
+      <tr>
+        <td valign="top">
+          <tt>C-h i</tt>
+        </td>
+        <td valign="top">Info browser; gives access to online documentation for emacs and more</td>
+      </tr>
+    </tbody>
+  </table>
+  <!-- =========================== -->
+  <table>
+    <tbody>
+      <tr>
+        <th colspan="2">
+          <font size="+2">Miscellaneous</font>
+        </th>
+      </tr>
+      <tr>
+        <td valign="top">
+          <tt>C-_</tt>
+          <i>or</i>
+          <tt>C-x u</tt>
+        </td>
+        <td valign="top">Undo/redo (a series of these keeps undoing; after doing something else,  <tt>C-_</tt>or  <tt>C-x u</tt>will undo the undo's)</td>
+      </tr>
+      <tr>
+        <td valign="top">
+          <tt>C-q</tt>
+        </td>
+        <td valign="top">Quoted insert; inserts the next character typed, even if it is a control or meta character</td>
+      </tr>
+      <tr>
+        <td valign="top">
+          <tt>M-x shell-strip-ctrl-m RET</tt>
+        </td>
+        <td valign="top">Flush ^M at end of line</td>
+      </tr>
+      <tr>
+        <td valign="top">
+          <tt>C-z</tt>
+        </td>
+        <td valign="top">Suspend/iconify emacs (type <tt>"%emacs"</tt>in invoking shell to get it back)</td>
+      </tr>
+      <tr>
+        <td valign="top">
+          <tt>C-x C-c</tt>
+        </td>
+        <td valign="top">Exit emacs (asks about unsaved buffers and running programs)</td>
+      </tr>
+    </tbody>
+  </table>
+  <!-- =========================== -->
+  <table>
+    <tbody>
+      <tr>
+        <th colspan="2">
+          <font size="+2">Files and Buffers</font>
+        </th>
+      </tr>
+      <tr>
+        <td valign="top">
+          <tt>C-x C-f</tt>
+        </td>
+        <td valign="top">Find file (or create if not there); prompts for file name</td>
+      </tr>
+      <tr>
+        <td valign="top">
+          <tt>C-x C-s</tt>
+        </td>
+        <td valign="top">Save file</td>
+      </tr>
+      <tr>
+        <td valign="top">
+          <tt>C-x C-w</tt>
+        </td>
+        <td valign="top">Write file; prompts for new name</td>
+      </tr>
+      <tr>
+        <td valign="top">
+          <tt>C-x s</tt>
+        </td>
+        <td valign="top">Save modified buffers; asks about each</td>
+      </tr>
+      <tr>
+        <td valign="top">
+          <tt>C-x b</tt>
+        </td>
+        <td valign="top">Select buffer; prompts for buffer name</td>
+      </tr>
+      <tr>
+        <td valign="top">
+          <tt>C-x C-b</tt>
+        </td>
+        <td valign="top">List buffers; shows in other window</td>
+      </tr>
+    </tbody>
+  </table>
+  <table>
+    <tbody>
+      <tr>
+        <th colspan="2">
+          <font size="+2">Searching/Replacing</font>
+        </th>
+      </tr>
+      <tr>
+        <td valign="top">
+          <tt>C-s</tt>
+        </td>
+        <td valign="top">Incremental search forward; searches as you type</td>
+      </tr>
+      <tr>
+        <td valign="top">
+          <tt>C-r</tt>
+        </td>
+        <td valign="top">Incremental search backward</td>
+      </tr>
+      <tr>
+        <td valign="top">
+          <tt>M-x replace-string RET</tt>
+        </td>
+        <td valign="top">String replace from here to end of buffer; prompts for string and replacement</td>
+      </tr>
+      <tr>
+        <td valign="top">
+          <tt>M-x query-replace RET</tt>
+        </td>
+        <td valign="top">String replace from here to end of buffer, querying for each occurrence</td>
+      </tr>
+    </tbody>
+  </table>
+</tables-container>

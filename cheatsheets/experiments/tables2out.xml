@@ -1,0 +1,1538 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="tables2out.xsl"?>
+<tables-container>
+  <list>
+    <record-def>
+      <name>Files</name>
+    </record-def>
+    <contents>
+      <item>
+        <record-def>
+          <name>read a file into Emacs</name>
+          <field type="key-sequence">C-x C-f</field>
+        </record-def>
+      </item>
+      <item>
+        <record-def>
+          <name>save a file back to disk</name>
+          <field type="key-sequence">C-x C-s</field>
+        </record-def>
+      </item>
+      <item>
+        <record-def>
+          <name>save all files</name>
+          <field type="key-sequence">C-x s</field>
+        </record-def>
+      </item>
+      <item>
+        <record-def>
+          <name>insert another file into this buffer</name>
+          <field type="key-sequence">C-x i</field>
+        </record-def>
+      </item>
+      <item>
+        <record-def>
+          <name>replace this file with another file</name>
+          <field type="key-sequence">C-x C-v</field>
+        </record-def>
+      </item>
+      <item>
+        <record-def>
+          <name>write buffer to a specified file</name>
+          <field type="key-sequence">C-x C-w</field>
+        </record-def>
+      </item>
+      <item>
+        <record-def>
+          <name>toggle read-only status of buffer</name>
+          <field type="key-sequence">C-x C-q</field>
+        </record-def>
+      </item>
+    </contents>
+  </list>
+  <list>
+    <record-def>
+      <name>Getting Help</name>
+    </record-def>
+    <contents>
+      <item>
+        <record-def>
+          <name>remove help window</name>
+          <field type="key-sequence">C-x 1</field>
+        </record-def>
+      </item>
+      <item>
+        <record-def>
+          <name>scroll help window</name>
+          <field type="key-sequence">C-M-v</field>
+        </record-def>
+      </item>
+      <item>
+        <record-def>
+          <name>apropos: show commands matching a string</name>
+          <field type="key-sequence">C-h a</field>
+        </record-def>
+      </item>
+      <item>
+        <record-def>
+          <name>describe the function a key runs</name>
+          <field type="key-sequence">C-h k</field>
+        </record-def>
+      </item>
+      <item>
+        <record-def>
+          <name>describe a function</name>
+          <field type="key-sequence">C-h f</field>
+        </record-def>
+      </item>
+      <item>
+        <record-def>
+          <name>get mode-specific information</name>
+          <field type="key-sequence">C-h m</field>
+        </record-def>
+      </item>
+    </contents>
+  </list>
+  <list>
+    <record-def>
+      <name>Error Recovery</name>
+    </record-def>
+    <contents>
+      <item>
+        <record-def>
+          <name>abort partially typed or executing command</name>
+          <field type="key-sequence">C-g</field>
+        </record-def>
+      </item>
+      <item>
+        <record-def>
+          <name>recover files lost by a system crash</name>
+          <field type="key-sequence">M-x recover-session</field>
+        </record-def>
+      </item>
+      <item>
+        <record-def>
+          <name>undo an unwanted change</name>
+          <field type="key-sequence">C-x u, C-_ or C-/</field>
+        </record-def>
+      </item>
+      <item>
+        <record-def>
+          <name>restore a buffer to its original contents</name>
+          <field type="key-sequence">M-x revert-buffer</field>
+        </record-def>
+      </item>
+      <item>
+        <record-def>
+          <name>redraw garbled screen</name>
+          <field type="key-sequence">C-l</field>
+        </record-def>
+      </item>
+    </contents>
+  </list>
+  <list>
+    <record-def>
+      <name>Incremental Search</name>
+    </record-def>
+    <contents>
+      <item>
+        <record-def>
+          <name>search forward</name>
+          <field type="key-sequence">C-s</field>
+        </record-def>
+      </item>
+      <item>
+        <record-def>
+          <name>search backward</name>
+          <field type="key-sequence">C-r</field>
+        </record-def>
+      </item>
+      <item>
+        <record-def>
+          <name>regular expression search</name>
+          <field type="key-sequence">C-M-s</field>
+        </record-def>
+      </item>
+      <item>
+        <record-def>
+          <name>reverse regular expression search</name>
+          <field type="key-sequence">C-M-r</field>
+        </record-def>
+      </item>
+    </contents>
+  </list>
+  <list>
+    <record-def>
+      <name>in i-search mode:</name>
+    </record-def>
+    <contents>
+      <item>
+        <record-def>
+          <name>select previous search string</name>
+          <field type="key-sequence">M-p</field>
+        </record-def>
+      </item>
+      <item>
+        <record-def>
+          <name>select next later search string</name>
+          <field type="key-sequence">M-n</field>
+        </record-def>
+      </item>
+      <item>
+        <record-def>
+          <name>exit incremental search</name>
+          <field type="key-sequence">RET</field>
+        </record-def>
+      </item>
+      <item>
+        <record-def>
+          <name>undo effect of last character</name>
+          <field type="key-sequence">DEL</field>
+        </record-def>
+      </item>
+      <item>
+        <record-def>
+          <name>abort current search</name>
+          <field type="key-sequence">C-g</field>
+        </record-def>
+      </item>
+    </contents>
+  </list>
+  <list>
+    <record-def>
+      <name>Motion</name>
+    </record-def>
+    <contents>
+      <item>
+        <record-def>
+          <name>entity to move over</name>
+          <field type="key-sequence">backward</field>
+          <field type="key-sequence">forward</field>
+        </record-def>
+      </item>
+      <item>
+        <record-def>
+          <name>character</name>
+          <field type="key-sequence">C-b</field>
+          <field type="key-sequence">C-f</field>
+        </record-def>
+      </item>
+      <item>
+        <record-def>
+          <name>word</name>
+          <field type="key-sequence">M-b</field>
+          <field type="key-sequence">M-f</field>
+        </record-def>
+      </item>
+      <item>
+        <record-def>
+          <name>line</name>
+          <field type="key-sequence">C-p</field>
+          <field type="key-sequence">C-n</field>
+        </record-def>
+      </item>
+      <item>
+        <record-def>
+          <name>goto line beginning (or end)</name>
+          <field type="key-sequence">C-a</field>
+          <field type="key-sequence">C-e</field>
+        </record-def>
+      </item>
+      <item>
+        <record-def>
+          <name>sentence</name>
+          <field type="key-sequence">M-a</field>
+          <field type="key-sequence">M-e</field>
+        </record-def>
+      </item>
+      <item>
+        <record-def>
+          <name>paragraph</name>
+          <field type="key-sequence">M-{</field>
+          <field type="key-sequence">M-}</field>
+        </record-def>
+      </item>
+      <item>
+        <record-def>
+          <name>page</name>
+          <field type="key-sequence">C-x [</field>
+          <field type="key-sequence">C-x ]</field>
+        </record-def>
+      </item>
+      <item>
+        <record-def>
+          <name>sexp (balanced expression)</name>
+          <field type="key-sequence">C-M-b</field>
+          <field type="key-sequence">C-M-f</field>
+        </record-def>
+      </item>
+      <item>
+        <record-def>
+          <name>function</name>
+          <field type="key-sequence">C-M-a</field>
+          <field type="key-sequence">C-M-e</field>
+        </record-def>
+      </item>
+      <item>
+        <record-def>
+          <name>goto buffer beginning (or end)</name>
+          <field type="key-sequence">M-&lt;</field>
+          <field type="key-sequence">M-&gt;</field>
+        </record-def>
+      </item>
+    </contents>
+  </list>
+  <list>
+    <record-def>
+      <name>Motion</name>
+    </record-def>
+    <contents>
+      <item>
+        <record-def>
+          <name>scroll to next screen</name>
+          <field type="key-sequence">C-v</field>
+        </record-def>
+      </item>
+      <item>
+        <record-def>
+          <name>scroll to previous screen</name>
+          <field type="key-sequence">M-v</field>
+        </record-def>
+      </item>
+      <item>
+        <record-def>
+          <name>scroll left</name>
+          <field type="key-sequence">C-x &lt;</field>
+        </record-def>
+      </item>
+      <item>
+        <record-def>
+          <name>scroll right</name>
+          <field type="key-sequence">C-x &gt;</field>
+        </record-def>
+      </item>
+      <item>
+        <record-def>
+          <name>scroll current line to center of screen</name>
+          <field type="key-sequence">C-u C-l</field>
+        </record-def>
+      </item>
+    </contents>
+  </list>
+  <list>
+    <record-def>
+      <name>Kill and Deleting</name>
+    </record-def>
+    <contents>
+      <item>
+        <record-def>
+          <name>entity to kill</name>
+          <field type="key-sequence">backward</field>
+          <field type="key-sequence">forward </field>
+        </record-def>
+      </item>
+      <item>
+        <record-def>
+          <name>character (delete, not kill)</name>
+          <field type="key-sequence">DEL</field>
+          <field type="key-sequence">C-d</field>
+        </record-def>
+      </item>
+      <item>
+        <record-def>
+          <name>word</name>
+          <field type="key-sequence">M-DEL</field>
+          <field type="key-sequence">M-d</field>
+        </record-def>
+      </item>
+      <item>
+        <record-def>
+          <name>line (to end of)</name>
+          <field type="key-sequence">M-0 C-k</field>
+          <field type="key-sequence">C-k</field>
+        </record-def>
+      </item>
+      <item>
+        <record-def>
+          <name>sentence</name>
+          <field type="key-sequence">C-x DEL</field>
+          <field type="key-sequence">M-k</field>
+        </record-def>
+      </item>
+      <item>
+        <record-def>
+          <name>sexp (balanced expression)</name>
+          <field type="key-sequence">M— C-M-k</field>
+          <field type="key-sequence">C-M-k</field>
+        </record-def>
+      </item>
+    </contents>
+  </list>
+  <list>
+    <record-def>
+      <name>Kill and Deleting</name>
+    </record-def>
+    <contents>
+      <item>
+        <record-def>
+          <name>kill region</name>
+          <field type="key-sequence">C-w</field>
+        </record-def>
+      </item>
+      <item>
+        <record-def>
+          <name>copy region to kill ring</name>
+          <field type="key-sequence">M-w</field>
+        </record-def>
+      </item>
+      <item>
+        <record-def>
+          <name>kill through next occurrence of char</name>
+          <field type="key-sequence">M-z char</field>
+        </record-def>
+      </item>
+    </contents>
+  </list>
+  <list>
+    <record-def>
+      <name>Kill and Deleting</name>
+    </record-def>
+    <contents>
+      <item>
+        <record-def>
+          <name>yank back last thing kill</name>
+          <field type="key-sequence">C-y</field>
+        </record-def>
+      </item>
+      <item>
+        <record-def>
+          <name>replace last yank with previous kill</name>
+          <field type="key-sequence">M-y</field>
+        </record-def>
+      </item>
+    </contents>
+  </list>
+  <list>
+    <record-def>
+      <name>Marking</name>
+    </record-def>
+    <contents>
+      <item>
+        <record-def>
+          <name>set mark here</name>
+          <field type="key-sequence">C-@ or C-SPC</field>
+        </record-def>
+      </item>
+      <item>
+        <record-def>
+          <name>exchange point and mark</name>
+          <field type="key-sequence">C-x C-x</field>
+        </record-def>
+      </item>
+      <item>
+        <record-def>
+          <name>set mark arg words away</name>
+          <field type="key-sequence">M-@</field>
+        </record-def>
+      </item>
+      <item>
+        <record-def>
+          <name>mark paragraph</name>
+          <field type="key-sequence">M-h</field>
+        </record-def>
+      </item>
+      <item>
+        <record-def>
+          <name>mark page</name>
+          <field type="key-sequence">C-x C-p</field>
+        </record-def>
+      </item>
+      <item>
+        <record-def>
+          <name>mark sexp</name>
+          <field type="key-sequence">C-M-@</field>
+        </record-def>
+      </item>
+      <item>
+        <record-def>
+          <name>mark function</name>
+          <field type="key-sequence">C-x h</field>
+        </record-def>
+      </item>
+    </contents>
+  </list>
+  <list>
+    <record-def>
+      <name>Query Replace</name>
+    </record-def>
+    <contents>
+      <item>
+        <record-def>
+          <name>interactively replace a text string</name>
+          <field type="key-sequence">M-%</field>
+        </record-def>
+      </item>
+      <item>
+        <record-def>
+          <name>using regular expressions</name>
+          <field type="key-sequence">M-x query-replace-regexp</field>
+        </record-def>
+      </item>
+    </contents>
+  </list>
+  <list>
+    <record-def>
+      <name>Valid responses in query-replace mode are: </name>
+    </record-def>
+    <contents>
+      <item>
+        <record-def>
+          <name>replace this one, go on to next</name>
+          <field type="key-sequence">SPC</field>
+        </record-def>
+      </item>
+      <item>
+        <record-def>
+          <name>replace this one, don't move</name>
+          <field type="key-sequence">,</field>
+        </record-def>
+      </item>
+      <item>
+        <record-def>
+          <name>skip to next without replacing</name>
+          <field type="key-sequence">DEL</field>
+        </record-def>
+      </item>
+      <item>
+        <record-def>
+          <name>replace all remaining matches</name>
+          <field type="key-sequence">!</field>
+        </record-def>
+      </item>
+      <item>
+        <record-def>
+          <name>back up to previous match</name>
+          <field type="key-sequence">^</field>
+        </record-def>
+      </item>
+      <item>
+        <record-def>
+          <name>exit query-replace</name>
+          <field type="key-sequence">RET</field>
+        </record-def>
+      </item>
+      <item>
+        <record-def>
+          <name>enter recursive edit (C-M-c to exit)</name>
+          <field type="key-sequence">C-r</field>
+        </record-def>
+      </item>
+    </contents>
+  </list>
+  <list>
+    <record-def>
+      <name>Multiple Windows</name>
+    </record-def>
+    <contents>
+      <item>
+        <record-def>
+          <name>delete all other windows</name>
+          <field type="key-sequence">C-x 1</field>
+          <field type="key-sequence">C-x 5 1</field>
+        </record-def>
+      </item>
+      <item>
+        <record-def>
+          <name>split window, above and below</name>
+          <field type="key-sequence">C-x 2</field>
+          <field type="key-sequence">C-x 5 2</field>
+        </record-def>
+      </item>
+      <item>
+        <record-def>
+          <name>delete this window</name>
+          <field type="key-sequence">C-x 0</field>
+          <field type="key-sequence">C-x 5 0</field>
+        </record-def>
+      </item>
+      <item>
+        <record-def>
+          <name>split window, side by side</name>
+          <field type="key-sequence">C-x 3</field>
+        </record-def>
+      </item>
+      <item>
+        <record-def>
+          <name>scroll other window</name>
+          <field type="key-sequence">C-M-v</field>
+        </record-def>
+      </item>
+      <item>
+        <record-def>
+          <name>switch cursor to other window</name>
+          <field type="key-sequence">C-x o</field>
+          <field type="key-sequence">C-x 5 o</field>
+        </record-def>
+      </item>
+      <item>
+        <record-def>
+          <name>select buffer in other window</name>
+          <field type="key-sequence">C-x 4 b</field>
+          <field type="key-sequence">C-x 5 b</field>
+        </record-def>
+      </item>
+      <item>
+        <record-def>
+          <name>display buffer in other window</name>
+          <field type="key-sequence">C-x 4 C-o</field>
+          <field type="key-sequence">C-x 5 C-o</field>
+        </record-def>
+      </item>
+      <item>
+        <record-def>
+          <name>find file in other window</name>
+          <field type="key-sequence">C-x 4 f</field>
+          <field type="key-sequence">C-x 5 f</field>
+        </record-def>
+      </item>
+      <item>
+        <record-def>
+          <name>find file read-only in other window</name>
+          <field type="key-sequence">C-x 4 r</field>
+          <field type="key-sequence">C-x 5 r</field>
+        </record-def>
+      </item>
+      <item>
+        <record-def>
+          <name>run Dired in other window</name>
+          <field type="key-sequence">C-x 4 d</field>
+          <field type="key-sequence">C-x 5 d</field>
+        </record-def>
+      </item>
+      <item>
+        <record-def>
+          <name>find tag in other window</name>
+          <field type="key-sequence">C-x 4 .</field>
+          <field type="key-sequence">C-x 5 .</field>
+        </record-def>
+      </item>
+      <item>
+        <record-def>
+          <name>grow window taller</name>
+          <field type="key-sequence">C-x ^</field>
+        </record-def>
+      </item>
+      <item>
+        <record-def>
+          <name>shrink window narrower</name>
+          <field type="key-sequence">C-x {</field>
+        </record-def>
+      </item>
+      <item>
+        <record-def>
+          <name>grow window wider</name>
+          <field type="key-sequence">C-x }</field>
+        </record-def>
+      </item>
+    </contents>
+  </list>
+  <list>
+    <record-def>
+      <name>Formatting</name>
+    </record-def>
+    <contents>
+      <item>
+        <record-def>
+          <name>indent current line (mode-dependent)</name>
+          <field type="key-sequence">TAB</field>
+        </record-def>
+      </item>
+      <item>
+        <record-def>
+          <name>indent region (mode-dependent)</name>
+          <field type="key-sequence">C-M-\</field>
+        </record-def>
+      </item>
+      <item>
+        <record-def>
+          <name>indent sexp (mode-dependent)</name>
+          <field type="key-sequence">C-M-q</field>
+        </record-def>
+      </item>
+      <item>
+        <record-def>
+          <name>indent region rigidly arg columns</name>
+          <field type="key-sequence">C-x TAB</field>
+        </record-def>
+      </item>
+    </contents>
+  </list>
+  <list>
+    <record-def>
+      <name>Formatting</name>
+    </record-def>
+    <contents>
+      <item>
+        <record-def>
+          <name>insert newline after point</name>
+          <field type="key-sequence">C-o</field>
+        </record-def>
+      </item>
+      <item>
+        <record-def>
+          <name>move rest of line vertically down</name>
+          <field type="key-sequence">C-M-o</field>
+        </record-def>
+      </item>
+      <item>
+        <record-def>
+          <name>delete blank lines around point</name>
+          <field type="key-sequence">C-x C-o</field>
+        </record-def>
+      </item>
+      <item>
+        <record-def>
+          <name>join line with previous (with arg, next)</name>
+          <field type="key-sequence">M-^</field>
+        </record-def>
+      </item>
+      <item>
+        <record-def>
+          <name>delete all white space around point</name>
+          <field type="key-sequence">M-\</field>
+        </record-def>
+      </item>
+      <item>
+        <record-def>
+          <name>put exactly one space at point</name>
+          <field type="key-sequence">M-SPC</field>
+        </record-def>
+      </item>
+    </contents>
+  </list>
+  <list>
+    <record-def>
+      <name>Formatting</name>
+    </record-def>
+    <contents>
+      <item>
+        <record-def>
+          <name>fill paragraph</name>
+          <field type="key-sequence">M-q</field>
+        </record-def>
+      </item>
+      <item>
+        <record-def>
+          <name>set fill column</name>
+          <field type="key-sequence">C-x f</field>
+        </record-def>
+      </item>
+      <item>
+        <record-def>
+          <name>set prefix each line starts with</name>
+          <field type="key-sequence">C-x .</field>
+        </record-def>
+      </item>
+    </contents>
+  </list>
+  <list>
+    <record-def>
+      <name>Formatting</name>
+    </record-def>
+    <contents>
+      <item>
+        <record-def>
+          <name>set face</name>
+          <field type="key-sequence">M-o</field>
+        </record-def>
+      </item>
+    </contents>
+  </list>
+  <list>
+    <record-def>
+      <name>Case Change</name>
+    </record-def>
+    <contents>
+      <item>
+        <record-def>
+          <name>uppercase word</name>
+          <field type="key-sequence">M-u</field>
+        </record-def>
+      </item>
+      <item>
+        <record-def>
+          <name>lowercase word</name>
+          <field type="key-sequence">M-l</field>
+        </record-def>
+      </item>
+      <item>
+        <record-def>
+          <name>capitalize word</name>
+          <field type="key-sequence">M-c</field>
+        </record-def>
+      </item>
+      <item>
+        <record-def>
+          <name>uppercase region</name>
+          <field type="key-sequence">C-x C-u</field>
+        </record-def>
+      </item>
+      <item>
+        <record-def>
+          <name>lowercase region</name>
+          <field type="key-sequence">C-x C-l</field>
+        </record-def>
+      </item>
+    </contents>
+  </list>
+  <list>
+    <record-def>
+      <name>The Minibuffer</name>
+    </record-def>
+    <contents>
+      <item>
+        <record-def>
+          <name>complete as much as possible</name>
+          <field type="key-sequence">TAB</field>
+        </record-def>
+      </item>
+      <item>
+        <record-def>
+          <name>complete up to one word</name>
+          <field type="key-sequence">SPC</field>
+        </record-def>
+      </item>
+      <item>
+        <record-def>
+          <name>complete and execute</name>
+          <field type="key-sequence">RET</field>
+        </record-def>
+      </item>
+      <item>
+        <record-def>
+          <name>show possible completions</name>
+          <field type="key-sequence">?</field>
+        </record-def>
+      </item>
+      <item>
+        <record-def>
+          <name>fetch previous minibuffer input</name>
+          <field type="key-sequence">M-p</field>
+        </record-def>
+      </item>
+      <item>
+        <record-def>
+          <name>fetch next minibuffer input or default</name>
+          <field type="key-sequence">M-n</field>
+        </record-def>
+      </item>
+      <item>
+        <record-def>
+          <name>regexp search backward through history</name>
+          <field type="key-sequence">M-r</field>
+        </record-def>
+      </item>
+      <item>
+        <record-def>
+          <name>regexp search forward through history</name>
+          <field type="key-sequence">M-s</field>
+        </record-def>
+      </item>
+      <item>
+        <record-def>
+          <name>abort command</name>
+          <field type="key-sequence">C-g</field>
+        </record-def>
+      </item>
+      <item>
+        <record-def>
+          <name>Repeat last mini buf command</name>
+          <field type="key-sequence">C-x ESC ESC or C-x M-:</field>
+        </record-def>
+      </item>
+    </contents>
+  </list>
+  <list>
+    <record-def>
+      <name>Buffers</name>
+    </record-def>
+    <contents>
+      <item>
+        <record-def>
+          <name>select another buffer</name>
+          <field type="key-sequence">C-x b</field>
+        </record-def>
+      </item>
+      <item>
+        <record-def>
+          <name>list all buffers</name>
+          <field type="key-sequence">C-x C-b</field>
+        </record-def>
+      </item>
+      <item>
+        <record-def>
+          <name>kill a buffer</name>
+          <field type="key-sequence">C-x k</field>
+        </record-def>
+      </item>
+    </contents>
+  </list>
+  <list>
+    <record-def>
+      <name>Transposing</name>
+    </record-def>
+    <contents>
+      <item>
+        <record-def>
+          <name>transpose characters</name>
+          <field type="key-sequence">C-t</field>
+        </record-def>
+      </item>
+      <item>
+        <record-def>
+          <name>transpose words</name>
+          <field type="key-sequence">M-t</field>
+        </record-def>
+      </item>
+      <item>
+        <record-def>
+          <name>transpose lines</name>
+          <field type="key-sequence">C-x C-t</field>
+        </record-def>
+      </item>
+      <item>
+        <record-def>
+          <name>transpose sexps</name>
+          <field type="key-sequence">C-M-t</field>
+        </record-def>
+      </item>
+    </contents>
+  </list>
+  <list>
+    <record-def>
+      <name>Spelling Check</name>
+    </record-def>
+    <contents>
+      <item>
+        <record-def>
+          <name>check spelling of current word</name>
+          <field type="key-sequence">M-$</field>
+        </record-def>
+      </item>
+      <item>
+        <record-def>
+          <name>check spelling of all words in region</name>
+          <field type="key-sequence">M-x ispell-region</field>
+        </record-def>
+      </item>
+      <item>
+        <record-def>
+          <name>check spelling of entire buffer</name>
+          <field type="key-sequence">M-x ispell-buffer</field>
+        </record-def>
+      </item>
+    </contents>
+  </list>
+  <list>
+    <record-def>
+      <name>Tags</name>
+    </record-def>
+    <contents>
+      <item>
+        <record-def>
+          <name>find a tag (a definition)</name>
+          <field type="key-sequence">M-.</field>
+        </record-def>
+      </item>
+      <item>
+        <record-def>
+          <name>find next occurrence of tag</name>
+          <field type="key-sequence">C-u M-.</field>
+        </record-def>
+      </item>
+      <item>
+        <record-def>
+          <name>specify a new tags file</name>
+          <field type="key-sequence">M-x visit-tags-table</field>
+        </record-def>
+      </item>
+    </contents>
+  </list>
+  <list>
+    <record-def>
+      <name>Tags</name>
+    </record-def>
+    <contents>
+      <item>
+        <record-def>
+          <name>regexp search on all files in tags table</name>
+          <field type="key-sequence">M-x tags-search</field>
+        </record-def>
+      </item>
+      <item>
+        <record-def>
+          <name>run query-replace on all the files</name>
+          <field type="key-sequence">M-x tags-query-replace</field>
+        </record-def>
+      </item>
+      <item>
+        <record-def>
+          <name>continue last tags search or query-replace</name>
+          <field type="key-sequence">M-,</field>
+        </record-def>
+      </item>
+    </contents>
+  </list>
+  <list>
+    <record-def>
+      <name>Shells</name>
+    </record-def>
+    <contents>
+      <item>
+        <record-def>
+          <name>execute a shell command</name>
+          <field type="key-sequence">M-!</field>
+        </record-def>
+      </item>
+      <item>
+        <record-def>
+          <name>run a shell command on the region</name>
+          <field type="key-sequence">M-|</field>
+        </record-def>
+      </item>
+      <item>
+        <record-def>
+          <name>filter region through a shell command</name>
+          <field type="key-sequence">C-u M-|</field>
+        </record-def>
+      </item>
+      <item>
+        <record-def>
+          <name>start a shell command in window \*shell\*</name>
+          <field type="key-sequence">M-x shell</field>
+        </record-def>
+      </item>
+    </contents>
+  </list>
+  <list>
+    <record-def>
+      <name>Rectangles</name>
+    </record-def>
+    <contents>
+      <item>
+        <record-def>
+          <name>copy rectangle to register</name>
+          <field type="key-sequence">C-x r r</field>
+        </record-def>
+      </item>
+      <item>
+        <record-def>
+          <name>kill rectangle</name>
+          <field type="key-sequence">C-x r k</field>
+        </record-def>
+      </item>
+      <item>
+        <record-def>
+          <name>yank rectangle</name>
+          <field type="key-sequence">C-x r y</field>
+        </record-def>
+      </item>
+      <item>
+        <record-def>
+          <name>open rectangle, shifting text right</name>
+          <field type="key-sequence">C-x r o</field>
+        </record-def>
+      </item>
+      <item>
+        <record-def>
+          <name>blank out rectangle</name>
+          <field type="key-sequence">C-x r c</field>
+        </record-def>
+      </item>
+      <item>
+        <record-def>
+          <name>prefix each line with a string</name>
+          <field type="key-sequence">C-x r t</field>
+        </record-def>
+      </item>
+    </contents>
+  </list>
+  <list>
+    <record-def>
+      <name>Abbrevs</name>
+    </record-def>
+    <contents>
+      <item>
+        <record-def>
+          <name>add global abbrev</name>
+          <field type="key-sequence">C-x a g</field>
+        </record-def>
+      </item>
+      <item>
+        <record-def>
+          <name>add mode-local abbrev</name>
+          <field type="key-sequence">C-x a l</field>
+        </record-def>
+      </item>
+      <item>
+        <record-def>
+          <name>add global expansion for this abbrev</name>
+          <field type="key-sequence">C-x a i g</field>
+        </record-def>
+      </item>
+      <item>
+        <record-def>
+          <name>add mode-local expansion for this abbrev</name>
+          <field type="key-sequence">C-x a i l</field>
+        </record-def>
+      </item>
+      <item>
+        <record-def>
+          <name>explicitly expand abbrev</name>
+          <field type="key-sequence">C-x a e</field>
+        </record-def>
+      </item>
+    </contents>
+  </list>
+  <list>
+    <record-def>
+      <name>Abbrevs</name>
+    </record-def>
+    <contents>
+      <item>
+        <record-def>
+          <name>expand previous word dynamically</name>
+          <field type="key-sequence">M-/</field>
+        </record-def>
+      </item>
+    </contents>
+  </list>
+  <list>
+    <record-def>
+      <name>Regular Expressions</name>
+    </record-def>
+    <contents>
+      <item>
+        <record-def>
+          <name>any single character except a newline</name>
+          <field type="key-sequence">. (dot)</field>
+        </record-def>
+      </item>
+      <item>
+        <record-def>
+          <name>zero or more repeats</name>
+          <field type="key-sequence">*</field>
+        </record-def>
+      </item>
+      <item>
+        <record-def>
+          <name>one or more repeats</name>
+          <field type="key-sequence">+</field>
+        </record-def>
+      </item>
+      <item>
+        <record-def>
+          <name>zero or one repeat</name>
+          <field type="key-sequence">?</field>
+        </record-def>
+      </item>
+      <item>
+        <record-def>
+          <name>quote regular expression special character</name>
+          <field type="key-sequence">\c</field>
+        </record-def>
+      </item>
+      <item>
+        <record-def>
+          <name>alternative ("or")</name>
+          <field type="key-sequence">\|</field>
+        </record-def>
+      </item>
+      <item>
+        <record-def>
+          <name>grouping</name>
+          <field type="key-sequence">\( ... \)</field>
+        </record-def>
+      </item>
+      <item>
+        <record-def>
+          <name>same text as nth group</name>
+          <field type="key-sequence">\n</field>
+        </record-def>
+      </item>
+      <item>
+        <record-def>
+          <name>at word break</name>
+          <field type="key-sequence">\b</field>
+        </record-def>
+      </item>
+      <item>
+        <record-def>
+          <name>not at word break</name>
+          <field type="key-sequence">\B</field>
+        </record-def>
+      </item>
+    </contents>
+  </list>
+  <list>
+    <record-def>
+      <name>Regex Cont</name>
+    </record-def>
+    <contents>
+      <item>
+        <record-def>
+          <name>entity</name>
+          <field type="key-sequence">match start</field>
+          <field type="key-sequence">match end</field>
+        </record-def>
+      </item>
+      <item>
+        <record-def>
+          <name>line</name>
+          <field type="key-sequence">^</field>
+          <field type="key-sequence">$</field>
+        </record-def>
+      </item>
+      <item>
+        <record-def>
+          <name>word</name>
+          <field type="key-sequence">\&lt;</field>
+          <field type="key-sequence">\&gt;</field>
+        </record-def>
+      </item>
+      <item>
+        <record-def>
+          <name>buffer</name>
+          <field type="key-sequence">\`</field>
+          <field type="key-sequence">\'</field>
+        </record-def>
+      </item>
+    </contents>
+  </list>
+  <list>
+    <record-def>
+      <name> RegEx Char Class</name>
+    </record-def>
+    <contents>
+      <item>
+        <record-def>
+          <name>class of characters</name>
+          <field type="key-sequence">match these</field>
+          <field type="key-sequence">match others</field>
+        </record-def>
+      </item>
+      <item>
+        <record-def>
+          <name>explicit set</name>
+          <field type="key-sequence">[ ... ]</field>
+          <field type="key-sequence">[^ ... ]</field>
+        </record-def>
+      </item>
+      <item>
+        <record-def>
+          <name>word-syntax character</name>
+          <field type="key-sequence">\w</field>
+          <field type="key-sequence">\W</field>
+        </record-def>
+      </item>
+      <item>
+        <record-def>
+          <name>character with syntax c</name>
+          <field type="key-sequence">\sc</field>
+          <field type="key-sequence">\Sc</field>
+        </record-def>
+      </item>
+    </contents>
+  </list>
+  <list>
+    <record-def>
+      <name>International Character Sets</name>
+    </record-def>
+    <contents>
+      <item>
+        <record-def>
+          <name>specify principal language</name>
+          <field type="key-sequence">C-x RET l</field>
+        </record-def>
+      </item>
+      <item>
+        <record-def>
+          <name>show all input methods</name>
+          <field type="key-sequence">M-x list-input-methods</field>
+        </record-def>
+      </item>
+      <item>
+        <record-def>
+          <name>enable or disable input method</name>
+          <field type="key-sequence">C-\</field>
+        </record-def>
+      </item>
+      <item>
+        <record-def>
+          <name>set coding system for next command</name>
+          <field type="key-sequence">C-x RET c</field>
+        </record-def>
+      </item>
+      <item>
+        <record-def>
+          <name>show all coding systems</name>
+          <field type="key-sequence">M-x list-coding-systems</field>
+        </record-def>
+      </item>
+      <item>
+        <record-def>
+          <name>choose preferred coding system</name>
+          <field type="key-sequence">M-x prefer-coding-system</field>
+        </record-def>
+      </item>
+    </contents>
+  </list>
+  <list>
+    <record-def>
+      <name>Info</name>
+    </record-def>
+    <contents>
+      <item>
+        <record-def>
+          <name>enter the Info documentation reader</name>
+          <field type="key-sequence">C-h i</field>
+        </record-def>
+      </item>
+      <item>
+        <record-def>
+          <name>find specified function or variable in Info</name>
+          <field type="key-sequence">C-h S</field>
+        </record-def>
+      </item>
+    </contents>
+  </list>
+  <list>
+	<record-def>
+	  <name>Moving within a node:</name>
+	</record-def>
+	<contents>
+	  <item>
+		<record-def>
+		  <name>scroll forward</name>
+		  <field type="key-sequence">SPC</field>
+		</record-def>
+	  </item>
+	  <item>
+		<record-def>
+		  <name>scroll reverse</name>
+		  <field type="key-sequence">DEL</field>
+		</record-def>
+	  </item>
+	  <item>
+		<record-def>
+		  <name>beginning of node</name>
+		  <field type="key-sequence">. (dot)</field>
+		</record-def>
+	  </item>
+	</contents>
+  </list>
+  <list>
+	<record-def>
+	  <name>Moving between nodes:</name>
+	</record-def>
+	<contents>
+	  <item>
+		<record-def>
+		  <name>next node</name>
+		  <field type="key-sequence">n</field>
+		</record-def>
+	  </item>
+	  <item>
+		<record-def>
+		  <name>previous node</name>
+		  <field type="key-sequence">p</field>
+		</record-def>
+	  </item>
+	  <item>
+		<record-def>
+		  <name>move up</name>
+		  <field type="key-sequence">u</field>
+		</record-def>
+	  </item>
+	  <item>
+		<record-def>
+		  <name>select menu item by name</name>
+		  <field type="key-sequence">m</field>
+		</record-def>
+	  </item>
+	  <item>
+		<record-def>
+		  <name>select nth menu item by number (1-9)</name>
+		  <field type="key-sequence">n</field>
+		</record-def>
+	  </item>
+	  <item>
+		<record-def>
+		  <name>follow cross reference (return with l)</name>
+		  <field type="key-sequence">f</field>
+		</record-def>
+	  </item>
+	  <item>
+		<record-def>
+		  <name>return to last node you saw</name>
+		  <field type="key-sequence">l</field>
+		</record-def>
+	  </item>
+	  <item>
+		<record-def>
+		  <name>return to directory node</name>
+		  <field type="key-sequence">d</field>
+		</record-def>
+	  </item>
+	  <item>
+		<record-def>
+		  <name>go to top node of Info file</name>
+		  <field type="key-sequence">t
+		  </field>
+		</record-def>
+	  </item>
+	  <item>
+		<record-def>
+		  <name>go to any node by name</name>
+		  <field type="key-sequence">g</field>
+		</record-def>
+	  </item>
+	</contents>
+  </list>
+  <list>
+	<record-def>
+	  <name>Other:</name>
+	</record-def>
+	<contents>
+	  <item>
+		<record-def>
+		  <name>run Info tutorial</name>
+		  <field type="key-sequence">h</field>
+		</record-def>
+	  </item>
+	  <item>
+		<record-def>
+		  <name>quit Info</name>
+		  <field type="key-sequence">q</field>
+		</record-def>
+	  </item>
+	  <item>
+		<record-def>
+		  <name>search nodes for regexp</name>
+		  <field type="key-sequence">M-s</field>
+		</record-def>
+	  </item>
+	</contents>
+  </list>
+  <list>
+	<record-def>
+	  <name>Registers</name>
+	</record-def>
+	<contents>
+	  <item>
+		<record-def>
+		  <name>save region into register</name>
+		  <field type="key-sequence">C-x r s</field>
+		</record-def>
+	  </item>
+	  <item>
+		<record-def>
+		  <name>insert register contents into buffer</name>
+		  <field type="key-sequence">C-x r i</field>
+		</record-def>
+	  </item>
+	  <item>
+		<record-def>
+		  <name>save value of point in register</name>
+		  <field type="key-sequence">C-x r SPC</field>
+		</record-def>
+	  </item>
+	  <item>
+		<record-def>
+		  <name>jump to point saved in register</name>
+		  <field type="key-sequence">C-x r j</field>
+		</record-def>
+	  </item>
+	</contents>
+  </list>
+  <list>
+	<record-def>
+	  <name>Keyboard Macros</name>
+	</record-def>
+	<contents>
+	  <item>
+		<record-def>
+		  <name>start defining a keyboard macro</name>
+		  <field type="key-sequence">C-x (</field>
+		</record-def>
+	  </item>
+	  <item>
+		<record-def>
+		  <name>end keyboard macro definition</name>
+		  <field type="key-sequence">C-x )</field>
+		</record-def>
+</item>
+<item>
+<record-def>
+<name>execute last-defined keyboard macro</name>
+<field type="key-sequence">C-x e</field>
+</record-def>
+</item>
+<item>
+<record-def>
+<name>append to last keyboard macro</name>
+<field type="key-sequence">C-u C-x (</field>
+</record-def>
+</item>
+<item>
+<record-def>
+<name>name last keyboard macro</name>
+<field type="key-sequence">M-x name-last-kbd-macro</field>
+</record-def>
+</item>
+<item>
+<record-def>
+<name>insert Lisp definition in buffer</name>
+<field type="key-sequence">M-x insert-kbd-macro</field>
+</record-def>
+</item>
+</contents>
+</list>
+<list>
+<record-def>
+<name>Commands dealing with Emacs Lisp</name>
+</record-def>
+<contents>
+<item>
+<record-def>
+<name>eval sexp before point</name>
+<field type="key-sequence">C-x C-e</field>
+</record-def>
+</item>
+<item>
+<record-def>
+<name>eval current defun</name>
+<field type="key-sequence">C-M-x</field>
+</record-def>
+</item>
+<item>
+<record-def>
+<name>eval region</name>
+<field type="key-sequence">M-x eval-region</field>
+</record-def>
+</item>
+<item>
+<record-def>
+<name>read and eval minibuffer</name>
+<field type="key-sequence">M-:</field>
+</record-def>
+</item>
+<item>
+<record-def>
+<name>load from standard system directory</name>
+<field type="key-sequence">M-x load-library</field>
+</record-def>
+</item>
+</contents>
+</list>
+</tables-container>
