@@ -14,7 +14,7 @@ homeyDir=homey # Want to create relative path to home
 echo "homeyDir="$homeyDir
 
 # Define files that should be exposed as links in ~
-dotFiles=".bashrc .bash_aliases .bash_emacs .emacs.d bin "
+dotFiles=".bashrc .bash_aliases .bash_profile .bash_emacs .emacs.d bin "
 
 timeNow=`date '+%Y_%m_%dT%H_%M_%S'`;
 bakDir=$homeyDir/backup/backup.$timeNow
